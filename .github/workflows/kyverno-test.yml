@@ -1,0 +1,32 @@
+name: kyverno-test
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  kyverno-test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        # 1.11.5: versão citada na monografia; 1.19.2: versão atual (out/2026)
+        kyverno: ["v1.11.5", "v1.19.2"]
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Instalar o Kyverno CLI ${{ matrix.kyverno }}
+        env:
+          VERSION: ${{ matrix.kyverno }}
+        run: |
+          ASSET="kyverno-cli_${VERSION}_linux_x86_64.tar.gz"
+          BASE="https://github.com/kyverno/kyverno/releases/download/${VERSION}"
+          curl -sSLO "${BASE}/${ASSET}"
+          curl -sSL -o checksums.txt "${BASE}/checksums.txt"
+          grep " ${ASSET}$" checksums.txt | sha256sum -c -
+          tar -xzf "${ASSET}" kyverno
+          sudo install kyverno /usr/local/bin/kyverno
+          kyverno version
+
+      - name: Rodar os testes das políticas
+        run: kyverno test .

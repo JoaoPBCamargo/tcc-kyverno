@@ -1,0 +1,21 @@
+# Brecha 3: initContainer privilegiado, com tag latest e sem limites.
+# As politicas originais so verificam spec.containers.
+apiVersion: v1
+kind: Pod
+metadata:
+  name: b3-initcontainer-privilegiado
+spec:
+  securityContext:
+    runAsNonRoot: true
+    runAsUser: 101
+  initContainers:
+  - name: init
+    image: busybox:latest
+    securityContext:
+      privileged: true
+  containers:
+  - name: nginx
+    image: nginx:1.25.0
+    resources:
+      requests: {cpu: 100m, memory: 128Mi}
+      limits: {cpu: 500m, memory: 512Mi}

@@ -1,0 +1,25 @@
+# Deployment com template privilegiado: o Kyverno gera regras para controladores
+# (autogen) e barra o Deployment na criacao, antes de qualquer Pod existir.
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: d1-deployment-privilegiado
+spec:
+  replicas: 1
+  selector:
+    matchLabels: {app: d1}
+  template:
+    metadata:
+      labels: {app: d1}
+    spec:
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 101
+      containers:
+      - name: nginx
+        image: nginx:1.25.0
+        resources:
+          requests: {cpu: 100m, memory: 128Mi}
+          limits: {cpu: 500m, memory: 512Mi}
+        securityContext:
+          privileged: true

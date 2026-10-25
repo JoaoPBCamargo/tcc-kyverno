@@ -1,0 +1,64 @@
+# Politicas e testes exatamente como impressos na monografia (versao de 20/10).
+# Este arquivo documenta o comportamento dessa versao, inclusive os problemas:
+# - os testes nao isolam as politicas (test-privileged falha em tres);
+# - require-nonroot da falso positivo em test-latest (nao-root declarado no conteiner);
+# - restrict-privileged NAO falha em test-root nem em test-latest, ao contrario das Figs. 5 e 6;
+# - as tres brechas (b1, b2, b3) passam por todas as politicas.
+apiVersion: cli.kyverno.io/v1alpha1
+kind: Test
+metadata:
+  name: politicas-da-monografia
+policies:
+  - policies/restrict-privileged.yaml
+  - policies/require-nonroot.yaml
+  - policies/require-limits.yaml
+  - policies/restrict-latest-tag.yaml
+resources:
+  - tests/test-privileged.yaml
+  - tests/test-root.yaml
+  - tests/test-latest.yaml
+  - tests/test-secure.yaml
+  - ../tests/b1-root-no-conteiner.yaml
+  - ../tests/b2-imagem-sem-tag.yaml
+  - ../tests/b3-initcontainer-privilegiado.yaml
+results:
+  - policy: restrict-privileged
+    rule: check-privileged
+    kind: Pod
+    resources: [test-privileged]
+    result: fail
+  - policy: restrict-privileged
+    rule: check-privileged
+    kind: Pod
+    resources: [test-root, test-latest, test-secure, b1-root-no-conteiner, b2-imagem-sem-tag, b3-initcontainer-privilegiado]
+    result: pass
+  - policy: require-nonroot
+    rule: check-nonroot
+    kind: Pod
+    resources: [test-privileged, test-root, test-latest]
+    result: fail
+  - policy: require-nonroot
+    rule: check-nonroot
+    kind: Pod
+    resources: [test-secure, b1-root-no-conteiner, b2-imagem-sem-tag, b3-initcontainer-privilegiado]
+    result: pass
+  - policy: require-limits
+    rule: check-limits
+    kind: Pod
+    resources: [test-privileged]
+    result: fail
+  - policy: require-limits
+    rule: check-limits
+    kind: Pod
+    resources: [test-root, test-latest, test-secure, b1-root-no-conteiner, b2-imagem-sem-tag, b3-initcontainer-privilegiado]
+    result: pass
+  - policy: restrict-latest-tag
+    rule: check-tag
+    kind: Pod
+    resources: [test-latest]
+    result: fail
+  - policy: restrict-latest-tag
+    rule: check-tag
+    kind: Pod
+    resources: [test-privileged, test-root, test-secure, b1-root-no-conteiner, b2-imagem-sem-tag, b3-initcontainer-privilegiado]
+    result: pass

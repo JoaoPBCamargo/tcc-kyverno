@@ -1,0 +1,15 @@
+# Brecha 2: imagem sem tag. O Kubernetes assume :latest, mas o padrao "!*:latest" nao pega.
+apiVersion: v1
+kind: Pod
+metadata:
+  name: b2-imagem-sem-tag
+spec:
+  securityContext:
+    runAsNonRoot: true
+    runAsUser: 101
+  containers:
+  - name: nginx
+    image: nginx
+    resources:
+      requests: {cpu: 100m, memory: 128Mi}
+      limits: {cpu: 500m, memory: 512Mi}
