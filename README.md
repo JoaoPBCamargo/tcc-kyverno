@@ -12,9 +12,9 @@ Com isso, qualquer pessoa consegue reproduzir os experimentos, com ou sem um clu
 policies/            políticas corrigidas (as que devem ser aplicadas no cluster)
 tests/               manifestos de teste: T0–T4 (isolados), B1–B3 (brechas), D1 (Deployment)
 kyverno-test.yaml    resultados esperados das políticas corrigidas
-original/            políticas e testes exatamente como impressos na versão de 20/10 da monografia
+original/            políticas e testes exatamente como impressos na monografia (Códigos 1 a 8)
 figuras/             Figuras 1, 2 e 3 da monografia (PNG) e o script que as gera
-.github/workflows/   CI: roda `kyverno test` com o Kyverno CLI 1.11.5 e 1.19.2
+.github/workflows/   CI: roda `kyverno test` com o Kyverno CLI 1.11.5, 1.18.1 e 1.19.2
 ```
 
 ## Rodar os testes sem cluster
@@ -77,25 +77,72 @@ As correções seguem a biblioteca oficial de políticas do Kyverno (licença Ap
 de recursos não exige limite de CPU (por causa de *throttling*); a deste trabalho exige.
 
 A pasta `original/` documenta o comportamento da versão impressa na monografia. Com o YAML
-impresso, a `restrict-privileged` **não** barra o `test-root` nem o `test-latest`, mas nas
-Figuras 5 e 6 ela barra. Isso indica que a política aplicada no cluster era diferente da
-impressa.
+impresso, a `restrict-privileged` **não** barra o `test-root` nem o `test-latest`, o que bate com
+as Figuras 6 e 7: o `test-root` é recusado só pela `require-nonroot`, e o `test-latest`, pela
+`require-nonroot` (o falso positivo) e pela `restrict-latest-tag`.
+
+## Ambiente da monografia
+
+Os testes no cluster (Tabela 6 e Figuras 5 a 8 da monografia) usaram este ambiente:
+
+| Componente | Versão |
+|---|---|
+| Kubernetes (GKE, canal Regular) | 1.35 (`1.35.8-gke.1796000`) |
+| Nós | 2 × `e2-medium` (2 vCPUs e 4 GB de RAM), zona `us-central1-a` |
+| Kyverno | 1.18.1, instalado pelo chart do Helm 3.8.1 |
+| Helm | 3.21.2 |
+| kubectl | 1.35.9 |
+
+Com dois nós `e2-medium`, os componentes do GKE e os quatro controladores do Kyverno (100m de
+CPU cada, no padrão do chart) reservaram cerca de 90% da CPU alocável de cada nó. Um Pod que pede
+100m de CPU, como o `test-secure`, fica `Pending`. Por isso, para verificar a execução dos Pods no
+Teste 4, o cluster foi ampliado temporariamente para três nós.
 
 ## Aplicar no cluster
 
-Instalem o Kyverno com a versão fixada. A versão do chart do Helm é diferente da versão do
-Kyverno; vejam a correspondência com `helm search repo kyverno/kyverno --versions`.
+Para recriar o ambiente no GKE, é preciso um projeto com faturamento ativo e a API do
+Kubernetes Engine habilitada. Se a versão `1.35.8-gke.1796000` não estiver mais disponível,
+usem o patch 1.35 mais recente da lista:
+
+```bash
+gcloud container get-server-config --zone us-central1-a --flatten="channels" \
+  --filter="channels.channel=REGULAR" --format="yaml(channels.validVersions)"
+
+gcloud container clusters create tcc-kyverno \
+  --zone us-central1-a --release-channel regular \
+  --cluster-version 1.35.8-gke.1796000 \
+  --machine-type e2-medium --num-nodes 2
+gcloud container clusters get-credentials tcc-kyverno --zone us-central1-a
+```
+
+Instalem o Kyverno com a versão fixada. A versão do chart (3.8.1) é diferente da versão do
+Kyverno (1.18.1); a correspondência aparece em `helm search repo kyverno/kyverno --versions`.
 
 ```bash
 helm repo add kyverno https://kyverno.github.io/kyverno/
-helm install kyverno kyverno/kyverno -n kyverno --create-namespace --version <versão-do-chart>
+helm install kyverno kyverno/kyverno -n kyverno --create-namespace --version 3.8.1
+kubectl -n kyverno rollout status deploy/kyverno-admission-controller --timeout=300s
 ```
 
-Depois apliquem as políticas e rodem os testes um de cada vez:
+Para reproduzir a Tabela 6 e as Figuras 5 a 8, apliquem as políticas e os testes de `original/`,
+um teste de cada vez:
 
 ```bash
+kubectl apply -f original/policies/
+kubectl get clusterpolicies     # ADMISSION e BACKGROUND true, READY True, MESSAGE Ready
+
+kubectl apply -f original/tests/test-privileged.yaml   # Figura 5: recusado por 3 políticas
+kubectl apply -f original/tests/test-root.yaml         # Figura 6: só a require-nonroot
+kubectl apply -f original/tests/test-latest.yaml       # Figura 7: require-nonroot e restrict-latest-tag
+kubectl apply -f original/tests/test-secure.yaml       # Figura 8: admitido, mas o nginx falha
+kubectl logs test-secure        # após alguns segundos: "Read-only file system"
+```
+
+Para testar as políticas corrigidas, troquem as políticas e rodem os testes um de cada vez:
+
+```bash
+kubectl delete -f original/policies/
 kubectl apply -f policies/
-kubectl get clusterpolicies            # ADMISSION, BACKGROUND e READY devem estar true
 
 kubectl apply -f tests/t0-seguro.yaml
 kubectl get pod t0-seguro              # deve ficar Running
@@ -103,20 +150,27 @@ kubectl apply -f tests/t1-privilegiado.yaml   # recusado só pela restrict-privi
 kubectl apply -f tests/d1-deployment-privilegiado.yaml   # recusado na criação do Deployment
 ```
 
-Para conferir que a política aplicada é a mesma do texto, rodem
-`kubectl get clusterpolicy restrict-privileged -o yaml`. Para registrar o ambiente, guardem a
-saída de `kubectl version` e `helm list -n kyverno`.
+Se um Pod ficar `Pending` por falta de CPU, adicionem um nó com
+`gcloud container clusters resize tcc-kyverno --zone us-central1-a --num-nodes 3`. Para registrar
+o ambiente, guardem a saída de `kubectl version` e `helm list -n kyverno`. No fim, apaguem o
+cluster para não gerar custo:
+
+```bash
+gcloud container clusters delete tcc-kyverno --zone us-central1-a --quiet
+```
 
 ## Versões
 
-- Testado com o Kyverno CLI **1.11.5** e **1.19.2**.
+- Testado com o Kyverno CLI **1.11.5**, **1.18.1** (a versão do cluster) e **1.19.2**.
 - A partir do Kyverno 1.13, `spec.validationFailureAction` foi substituído por
   `spec.rules[*].validate.failureAction`. O campo antigo ainda funciona, com aviso de
   deprecação.
 - Na 1.19, o tipo `ClusterPolicy` (`kyverno.io/v1`) está marcado como deprecated em favor do
   `ValidatingPolicy` (CEL). O CLI emite um aviso, mas as políticas funcionam.
-- O Kyverno 1.11 suporta oficialmente Kubernetes 1.25–1.28. Confiram a matriz de
-  compatibilidade da versão usada no cluster.
+- Os testes de conformidade do Kyverno 1.18.1 rodam em Kubernetes 1.33, 1.34 e 1.35, faixa que
+  inclui o 1.35 do cluster. O Kyverno 1.11 suportava oficialmente só Kubernetes 1.25–1.28, por
+  isso não serve para esse cluster; o CLI 1.11.5 continua no CI porque a Seção 4.3 da monografia
+  cita os resultados nessa versão.
 
 ## Figuras
 
