@@ -10,8 +10,9 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        # 1.11.5: versão citada na monografia; 1.19.2: versão atual (out/2026)
-        kyverno: ["v1.11.5", "v1.19.2"]
+        # 1.11.5 e 1.19.2: versões do CLI citadas na Seção 4.3 da monografia;
+        # 1.18.1: versão do Kyverno instalado no cluster (chart 3.8.1)
+        kyverno: ["v1.11.5", "v1.18.1", "v1.19.2"]
     steps:
       - uses: actions/checkout@v7
 
