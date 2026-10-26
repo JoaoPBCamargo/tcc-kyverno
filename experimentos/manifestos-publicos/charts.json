@@ -1,0 +1,606 @@
+[
+ {
+  "rank": 1,
+  "repo": "prometheus-community",
+  "chart": "kube-prometheus-stack",
+  "stars": 1234,
+  "url": "https://prometheus-community.github.io/helm-charts",
+  "version": "92.14.0",
+  "appVersion": "v0.94.2",
+  "status": "ok"
+ },
+ {
+  "rank": 2,
+  "repo": "cert-manager",
+  "chart": "cert-manager",
+  "stars": 996,
+  "url": "https://charts.jetstack.io",
+  "version": "v1.21.3",
+  "appVersion": "v1.21.3",
+  "status": "ok"
+ },
+ {
+  "rank": 3,
+  "repo": "argo",
+  "chart": "argo-cd",
+  "stars": 846,
+  "url": "https://argoproj.github.io/argo-helm",
+  "version": "10.11.6",
+  "appVersion": "v3.5.6",
+  "status": "ok"
+ },
+ {
+  "rank": 4,
+  "repo": "ingress-nginx",
+  "chart": "ingress-nginx",
+  "stars": 819,
+  "url": "https://kubernetes.github.io/ingress-nginx",
+  "version": "4.15.1",
+  "appVersion": "1.15.1",
+  "status": "ok"
+ },
+ {
+  "rank": 5,
+  "repo": "prometheus-community",
+  "chart": "prometheus",
+  "stars": 557,
+  "url": "https://prometheus-community.github.io/helm-charts",
+  "version": "29.38.2",
+  "appVersion": "v3.15.1",
+  "status": "ok"
+ },
+ {
+  "rank": 6,
+  "repo": "bitnami",
+  "chart": "redis",
+  "stars": 507,
+  "url": "https://charts.bitnami.com/bitnami",
+  "version": "28.3.10",
+  "appVersion": "8.10.3",
+  "status": "ok"
+ },
+ {
+  "rank": 7,
+  "repo": "traefik",
+  "chart": "traefik",
+  "stars": 431,
+  "url": "https://traefik.github.io/charts",
+  "version": "42.1.3",
+  "appVersion": "v3.7.16",
+  "status": "ok"
+ },
+ {
+  "rank": 8,
+  "repo": "bitnami",
+  "chart": "postgresql",
+  "stars": 431,
+  "url": "https://charts.bitnami.com/bitnami",
+  "version": "18.12.16",
+  "appVersion": "18.6.0",
+  "status": "ok"
+ },
+ {
+  "rank": 9,
+  "repo": "k8s-dashboard",
+  "chart": "kubernetes-dashboard",
+  "stars": 365,
+  "url": "https://kubernetes.github.io/dashboard",
+  "status": "falhou",
+  "erro": "Error: looks like \"https://kubernetes.github.io/dashboard\" is not a valid chart repository or cannot be reached: failed to fetch https://kubernetes.github.io/dashboard/index.yaml : 404 Not Found"
+ },
+ {
+  "rank": 10,
+  "repo": "grafana",
+  "chart": "loki",
+  "stars": 333,
+  "url": "https://grafana.github.io/helm-charts",
+  "version": "7.5.0",
+  "appVersion": "3.6.16",
+  "status": "falhou",
+  "erro": "Use --debug flag to render out invalid YAML"
+ },
+ {
+  "rank": 11,
+  "repo": "metrics-server",
+  "chart": "metrics-server",
+  "stars": 320,
+  "url": "https://kubernetes-sigs.github.io/metrics-server/",
+  "version": "3.14.0",
+  "appVersion": "0.9.0",
+  "status": "ok"
+ },
+ {
+  "rank": 12,
+  "repo": "hashicorp",
+  "chart": "vault",
+  "stars": 298,
+  "url": "https://helm.releases.hashicorp.com",
+  "version": "0.34.1",
+  "appVersion": "2.0.4",
+  "status": "ok"
+ },
+ {
+  "rank": 13,
+  "repo": "gitlab",
+  "chart": "gitlab",
+  "stars": 282,
+  "url": "http://charts.gitlab.io/",
+  "version": "10.5.1",
+  "appVersion": "v19.5.1",
+  "status": "falhou",
+  "erro": "Use --debug flag to render out invalid YAML"
+ },
+ {
+  "rank": 14,
+  "repo": "harbor",
+  "chart": "harbor",
+  "stars": 275,
+  "url": "https://helm.goharbor.io",
+  "version": "1.19.4",
+  "appVersion": "2.15.4",
+  "status": "ok"
+ },
+ {
+  "rank": 15,
+  "repo": "bitnami",
+  "chart": "keycloak",
+  "stars": 275,
+  "url": "https://charts.bitnami.com/bitnami",
+  "version": "25.2.0",
+  "appVersion": "26.3.3",
+  "status": "ok"
+ },
+ {
+  "rank": 16,
+  "repo": "jenkinsci",
+  "chart": "jenkins",
+  "stars": 255,
+  "url": "https://charts.jenkins.io/",
+  "version": "5.10.0",
+  "appVersion": "2.580.1",
+  "status": "ok"
+ },
+ {
+  "rank": 17,
+  "repo": "external-secrets-operator",
+  "chart": "external-secrets",
+  "stars": 250,
+  "url": "https://charts.external-secrets.io/",
+  "version": "2.14.0",
+  "appVersion": "v2.14.0",
+  "status": "ok"
+ },
+ {
+  "rank": 18,
+  "repo": "external-dns",
+  "chart": "external-dns",
+  "stars": 240,
+  "url": "https://kubernetes-sigs.github.io/external-dns/",
+  "version": "1.23.0",
+  "appVersion": "0.23.0",
+  "status": "falhou",
+  "erro": "- at '/policy': got null, want string"
+ },
+ {
+  "rank": 19,
+  "repo": "longhorn",
+  "chart": "longhorn",
+  "stars": 225,
+  "url": "https://charts.longhorn.io",
+  "version": "1.13.0",
+  "appVersion": "v1.13.0",
+  "status": "ok"
+ },
+ {
+  "rank": 20,
+  "repo": "bitnami",
+  "chart": "rabbitmq",
+  "stars": 215,
+  "url": "https://charts.bitnami.com/bitnami",
+  "version": "16.0.14",
+  "appVersion": "4.1.3",
+  "status": "ok"
+ },
+ {
+  "rank": 21,
+  "repo": "gitlab",
+  "chart": "gitlab-runner",
+  "stars": 213,
+  "url": "http://charts.gitlab.io/",
+  "version": "0.94.1",
+  "appVersion": "19.5.1",
+  "status": "ok"
+ },
+ {
+  "rank": 22,
+  "repo": "aws",
+  "chart": "aws-load-balancer-controller",
+  "stars": 211,
+  "url": "https://aws.github.io/eks-charts",
+  "version": "3.6.2",
+  "appVersion": "v3.6.2",
+  "status": "falhou",
+  "erro": "Use --debug flag to render out invalid YAML"
+ },
+ {
+  "rank": 23,
+  "repo": "bitnami",
+  "chart": "kafka",
+  "stars": 204,
+  "url": "https://charts.bitnami.com/bitnami",
+  "version": "32.4.3",
+  "appVersion": "4.0.0",
+  "status": "ok"
+ },
+ {
+  "rank": 24,
+  "repo": "cilium",
+  "chart": "cilium",
+  "stars": 202,
+  "url": "https://helm.cilium.io/",
+  "version": "1.20.4",
+  "appVersion": "1.20.4",
+  "status": "ok"
+ },
+ {
+  "rank": 25,
+  "repo": "bitnami",
+  "chart": "external-dns",
+  "stars": 200,
+  "url": "https://charts.bitnami.com/bitnami",
+  "version": "9.0.3",
+  "appVersion": "0.18.0",
+  "status": "ok"
+ },
+ {
+  "rank": 26,
+  "repo": "apache-airflow",
+  "chart": "airflow",
+  "stars": 198,
+  "url": "https://airflow.apache.org/",
+  "version": "1.22.0",
+  "appVersion": "3.2.2",
+  "status": "ok"
+ },
+ {
+  "rank": 27,
+  "repo": "bitnami",
+  "chart": "mysql",
+  "stars": 197,
+  "url": "https://charts.bitnami.com/bitnami",
+  "version": "14.0.3",
+  "appVersion": "9.4.0",
+  "status": "ok"
+ },
+ {
+  "rank": 28,
+  "repo": "elastic",
+  "chart": "elasticsearch",
+  "stars": 194,
+  "url": "https://helm.elastic.co",
+  "version": "8.5.1",
+  "appVersion": "8.5.1",
+  "status": "ok"
+ },
+ {
+  "rank": 29,
+  "repo": "bitnami",
+  "chart": "mongodb",
+  "stars": 193,
+  "url": "https://charts.bitnami.com/bitnami",
+  "version": "20.0.12",
+  "appVersion": "9.0.4",
+  "status": "ok"
+ },
+ {
+  "rank": 30,
+  "repo": "vmware-tanzu",
+  "chart": "velero",
+  "stars": 191,
+  "url": "https://vmware-tanzu.github.io/helm-charts/",
+  "version": "12.2.1",
+  "appVersion": "1.18.2",
+  "status": "ok"
+ },
+ {
+  "rank": 31,
+  "repo": "nextcloud",
+  "chart": "nextcloud",
+  "stars": 190,
+  "url": "https://nextcloud.github.io/helm/",
+  "version": "9.4.1",
+  "appVersion": "35.0.2",
+  "status": "ok"
+ },
+ {
+  "rank": 32,
+  "repo": "bitnami",
+  "chart": "minio",
+  "stars": 169,
+  "url": "https://charts.bitnami.com/bitnami",
+  "version": "17.0.21",
+  "appVersion": "2025.7.23",
+  "status": "ok"
+ },
+ {
+  "rank": 33,
+  "repo": "cluster-autoscaler",
+  "chart": "cluster-autoscaler",
+  "stars": 168,
+  "url": "https://kubernetes.github.io/autoscaler",
+  "version": "9.59.0",
+  "appVersion": "1.35.0",
+  "status": "ok"
+ },
+ {
+  "rank": 34,
+  "repo": "metallb",
+  "chart": "metallb",
+  "stars": 154,
+  "url": "https://metallb.github.io/metallb",
+  "version": "0.16.1",
+  "appVersion": "v0.16.1",
+  "status": "ok"
+ },
+ {
+  "rank": 35,
+  "repo": "istio-official",
+  "chart": "istiod",
+  "stars": 143,
+  "url": "https://istio-release.storage.googleapis.com/charts",
+  "version": "1.30.7",
+  "appVersion": "1.30.7",
+  "status": "ok"
+ },
+ {
+  "rank": 36,
+  "repo": "rancher-stable",
+  "chart": "rancher",
+  "stars": 141,
+  "url": "https://releases.rancher.com/server-charts/stable",
+  "version": "2.15.2",
+  "appVersion": "v2.15.2",
+  "status": "ok"
+ },
+ {
+  "rank": 37,
+  "repo": "argo",
+  "chart": "argo-workflows",
+  "stars": 140,
+  "url": "https://argoproj.github.io/argo-helm",
+  "version": "2.0.14",
+  "appVersion": "v4.1.6",
+  "status": "ok"
+ },
+ {
+  "rank": 38,
+  "repo": "kyverno",
+  "chart": "kyverno",
+  "stars": 140,
+  "url": "https://kyverno.github.io/kyverno/",
+  "version": "3.9.2",
+  "appVersion": "v1.19.2",
+  "status": "ok"
+ },
+ {
+  "rank": 39,
+  "repo": "cloudnative-pg",
+  "chart": "cloudnative-pg",
+  "stars": 140,
+  "url": "https://cloudnative-pg.io/charts/",
+  "version": "0.29.1",
+  "appVersion": "1.30.1",
+  "status": "ok"
+ },
+ {
+  "rank": 40,
+  "repo": "gitea",
+  "chart": "gitea",
+  "stars": 135,
+  "url": "https://dl.gitea.com/charts",
+  "version": "12.7.0",
+  "appVersion": "1.27.0",
+  "status": "ok"
+ },
+ {
+  "rank": 41,
+  "repo": "sonarqube",
+  "chart": "sonarqube",
+  "stars": 135,
+  "url": "https://SonarSource.github.io/helm-chart-sonarqube",
+  "version": "2026.5.1003",
+  "appVersion": "2026.5.3",
+  "status": "falhou",
+  "erro": "Use --debug flag to render out invalid YAML"
+ },
+ {
+  "rank": 42,
+  "repo": "fluent",
+  "chart": "fluent-bit",
+  "stars": 128,
+  "url": "https://fluent.github.io/helm-charts",
+  "version": "0.58.3",
+  "appVersion": "5.1.3",
+  "status": "ok"
+ },
+ {
+  "rank": 43,
+  "repo": "datadog",
+  "chart": "datadog",
+  "stars": 117,
+  "url": "https://helm.datadoghq.com",
+  "version": "3.261.1",
+  "appVersion": "7",
+  "status": "ok"
+ },
+ {
+  "rank": 44,
+  "repo": "oauth2-proxy",
+  "chart": "oauth2-proxy",
+  "stars": 113,
+  "url": "https://oauth2-proxy.github.io/manifests",
+  "version": "10.7.1",
+  "appVersion": "7.15.5",
+  "status": "ok"
+ },
+ {
+  "rank": 45,
+  "repo": "runix",
+  "chart": "pgadmin4",
+  "stars": 112,
+  "url": "https://helm.runix.net/",
+  "version": "1.70.4",
+  "appVersion": "9.18",
+  "status": "ok"
+ },
+ {
+  "rank": 46,
+  "repo": "bitnami",
+  "chart": "nginx",
+  "stars": 107,
+  "url": "https://charts.bitnami.com/bitnami",
+  "version": "25.2.13",
+  "appVersion": "1.31.8",
+  "status": "ok"
+ },
+ {
+  "rank": 47,
+  "repo": "bitnami",
+  "chart": "wordpress",
+  "stars": 107,
+  "url": "https://charts.bitnami.com/bitnami",
+  "version": "34.2.3",
+  "appVersion": "7.1.3",
+  "status": "ok"
+ },
+ {
+  "rank": 48,
+  "repo": "bitnami",
+  "chart": "thanos",
+  "stars": 106,
+  "url": "https://charts.bitnami.com/bitnami",
+  "version": "17.3.1",
+  "appVersion": "0.39.2",
+  "status": "ok"
+ },
+ {
+  "rank": 49,
+  "repo": "goauthentik",
+  "chart": "authentik",
+  "stars": 104,
+  "url": "https://charts.goauthentik.io/",
+  "version": "2026.8.5",
+  "appVersion": "2026.8.5",
+  "status": "ok"
+ },
+ {
+  "rank": 50,
+  "repo": "bitnami-labs",
+  "chart": "sealed-secrets",
+  "stars": 102,
+  "url": "https://bitnami-labs.github.io/sealed-secrets/",
+  "status": "falhou",
+  "erro": "Error: looks like \"https://bitnami-labs.github.io/sealed-secrets/\" is not a valid chart repository or cannot be reached: failed to fetch https://bitnami-labs.github.io/sealed-secrets/index.yaml : 404 Not Found"
+ },
+ {
+  "rank": 51,
+  "repo": "nginx",
+  "chart": "nginx-ingress",
+  "stars": 100,
+  "url": "https://helm.nginx.com/stable",
+  "version": "2.8.0",
+  "appVersion": "5.7.0",
+  "status": "ok"
+ },
+ {
+  "rank": 52,
+  "repo": "kedacore",
+  "chart": "keda",
+  "stars": 100,
+  "url": "https://kedacore.github.io/charts",
+  "version": "2.21.0",
+  "appVersion": "2.21.0",
+  "status": "ok"
+ },
+ {
+  "rank": 53,
+  "repo": "argo",
+  "chart": "argocd-apps",
+  "stars": 99,
+  "url": "https://argoproj.github.io/argo-helm",
+  "version": "2.0.7",
+  "appVersion": "",
+  "status": "falhou",
+  "erro": ""
+ },
+ {
+  "rank": 54,
+  "repo": "nfs-subdir-external-provisioner",
+  "chart": "nfs-subdir-external-provisioner",
+  "stars": 99,
+  "url": "https://kubernetes-sigs.github.io/nfs-subdir-external-provisioner",
+  "version": "4.0.18",
+  "appVersion": "4.0.2",
+  "status": "ok"
+ },
+ {
+  "rank": 55,
+  "repo": "artifact-hub",
+  "chart": "artifact-hub",
+  "stars": 96,
+  "url": "https://artifacthub.github.io/helm-charts/",
+  "version": "1.23.0",
+  "appVersion": "1.23.0",
+  "status": "ok"
+ },
+ {
+  "rank": 56,
+  "repo": "mojo2600",
+  "chart": "pihole",
+  "stars": 93,
+  "url": "https://mojo2600.github.io/pihole-kubernetes/",
+  "version": "2.38.0",
+  "appVersion": "2026.07.2",
+  "status": "ok"
+ },
+ {
+  "rank": 57,
+  "repo": "prometheus-community",
+  "chart": "kube-state-metrics",
+  "stars": 92,
+  "url": "https://prometheus-community.github.io/helm-charts",
+  "version": "8.7.1",
+  "appVersion": "2.20.0",
+  "status": "ok"
+ },
+ {
+  "rank": 58,
+  "repo": "hashicorp",
+  "chart": "consul",
+  "stars": 90,
+  "url": "https://helm.releases.hashicorp.com",
+  "version": "2.1.0",
+  "appVersion": "2.1.0",
+  "status": "ok"
+ },
+ {
+  "rank": 59,
+  "repo": "community-charts",
+  "chart": "n8n",
+  "stars": 90,
+  "url": "https://community-charts.github.io/helm-charts",
+  "version": "1.24.43",
+  "appVersion": "2.41.6",
+  "status": "ok"
+ },
+ {
+  "rank": 60,
+  "repo": "grafana",
+  "chart": "alloy",
+  "stars": 87,
+  "url": "https://grafana.github.io/helm-charts",
+  "version": "1.14.3",
+  "appVersion": "v1.21.2",
+  "status": "ok"
+ }
+]

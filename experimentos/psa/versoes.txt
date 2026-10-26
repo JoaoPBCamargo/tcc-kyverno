@@ -1,0 +1,5 @@
+Client Version: v1.35.9
+Kustomize Version: v5.7.1
+Server Version: v1.35.8
+NAME   	NAMESPACE	REVISION	UPDATED                            	STATUS  	CHART        	APP VERSION
+kyverno	kyverno  	1       	2026-10-26 16:16:47.22208 -0300 -03	deployed	kyverno-3.8.1	v1.18.1    

@@ -1,0 +1,23 @@
+charts consultados: 60 | renderizados: 52 | com workloads avaliados: 51 | workloads avaliados: 148
+tipos: {'DaemonSet': 9, 'Deployment': 76, 'Pod': 14, 'Job': 24, 'StatefulSet': 25}
+falhas de renderização: [('k8s-dashboard/kubernetes-dashboard', 'Error: looks like "https://kubernetes.github.io/dashboard" i'), ('grafana/loki', 'Use --debug flag to render out invalid YAML'), ('gitlab/gitlab', 'Use --debug flag to render out invalid YAML'), ('external-dns/external-dns', "- at '/policy': got null, want string"), ('aws/aws-load-balancer-controller', 'Use --debug flag to render out invalid YAML'), ('sonarqube/sonarqube', 'Use --debug flag to render out invalid YAML'), ('bitnami-labs/sealed-secrets', 'Error: looks like "https://bitnami-labs.github.io/sealed-sec'), ('argo/argocd-apps', '')]
+
+restrict-privileged: original 2 wl/1 charts | corrigida 4 wl/3 charts | só corrigida 2 [('cilium/cilium', 'cilium'), ('elastic/elasticsearch', 'elasticsearch-master')] | só original 0
+
+require-nonroot: original 127 wl/47 charts | corrigida 49 wl/20 charts | só corrigida 0 [] | só original 78
+
+require-limits: original 106 wl/38 charts | corrigida 108 wl/38 charts | só corrigida 2 [('elastic/elasticsearch', 'elasticsearch-master'), ('hashicorp/consul', 'tcc-consul-server')] | só original 0
+
+restrict-latest-tag: original 15 wl/9 charts | corrigida 18 wl/10 charts | só corrigida 3 [('artifact-hub/artifact-hub', 'hub'), ('artifact-hub/artifact-hub', 'db-migrator-install'), ('mojo2600/pihole', 'tcc-smoke-test')] | só original 0
+
+falsos positivos da require-nonroot original: 78 = 70 (não-root só nos contêineres) + 8 (runAsNonRoot no Pod, sem runAsUser explícito) + 0 outros
+  charts afetados: 31
+require-nonroot corrigida barra: 49 | com runAsUser 0: 5 [('longhorn/longhorn', 'longhorn-driver-deployer'), ('apache-airflow/airflow', 'tcc-redis'), ('elastic/elasticsearch', 'elasticsearch-master'), ('rancher-stable/rancher', 'tcc-rancher-post-delete'), ('rancher-stable/rancher', 'tcc-rancher-pre-upgrade')]
+orig: passam nas 4 = 1 de 148 (0.7%) | charts 100% conformes = 0 de 51: []
+corr: passam nas 4 = 27 de 148 (18.2%) | charts 100% conformes = 8 de 51: ['bitnami/keycloak', 'bitnami/rabbitmq', 'bitnami/kafka', 'bitnami/external-dns', 'bitnami/mysql', 'bitnami/minio', 'bitnami/thanos', 'kedacore/keda']
+restrict-privileged: % corr = 2.7% | % orig = 1.4%
+require-nonroot: % corr = 33.1% | % orig = 85.8%
+require-limits: % corr = 73.0% | % orig = 71.6%
+restrict-latest-tag: % corr = 12.2% | % orig = 10.1%
+
+recursos nos 148 workloads: {'nenhum requests nem limits': 93, 'parcial': 11, 'requests e limits completos': 40, 'só falta limite de CPU': 4}

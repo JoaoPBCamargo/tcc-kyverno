@@ -1,0 +1,4778 @@
+{
+ "charts": [
+  {
+   "rank": 1,
+   "repo": "prometheus-community",
+   "chart": "kube-prometheus-stack",
+   "stars": 1234,
+   "url": "https://prometheus-community.github.io/helm-charts",
+   "version": "92.14.0",
+   "appVersion": "v0.94.2",
+   "status": "ok",
+   "workloads": 7
+  },
+  {
+   "rank": 2,
+   "repo": "cert-manager",
+   "chart": "cert-manager",
+   "stars": 996,
+   "url": "https://charts.jetstack.io",
+   "version": "v1.21.3",
+   "appVersion": "v1.21.3",
+   "status": "ok",
+   "workloads": 4
+  },
+  {
+   "rank": 3,
+   "repo": "argo",
+   "chart": "argo-cd",
+   "stars": 846,
+   "url": "https://argoproj.github.io/argo-helm",
+   "version": "10.11.6",
+   "appVersion": "v3.5.6",
+   "status": "ok",
+   "workloads": 8
+  },
+  {
+   "rank": 4,
+   "repo": "ingress-nginx",
+   "chart": "ingress-nginx",
+   "stars": 819,
+   "url": "https://kubernetes.github.io/ingress-nginx",
+   "version": "4.15.1",
+   "appVersion": "1.15.1",
+   "status": "ok",
+   "workloads": 3
+  },
+  {
+   "rank": 5,
+   "repo": "prometheus-community",
+   "chart": "prometheus",
+   "stars": 557,
+   "url": "https://prometheus-community.github.io/helm-charts",
+   "version": "29.38.2",
+   "appVersion": "v3.15.1",
+   "status": "ok",
+   "workloads": 5
+  },
+  {
+   "rank": 6,
+   "repo": "bitnami",
+   "chart": "redis",
+   "stars": 507,
+   "url": "https://charts.bitnami.com/bitnami",
+   "version": "28.3.10",
+   "appVersion": "8.10.3",
+   "status": "ok",
+   "workloads": 2
+  },
+  {
+   "rank": 7,
+   "repo": "traefik",
+   "chart": "traefik",
+   "stars": 431,
+   "url": "https://traefik.github.io/charts",
+   "version": "42.1.3",
+   "appVersion": "v3.7.16",
+   "status": "ok",
+   "workloads": 1
+  },
+  {
+   "rank": 8,
+   "repo": "bitnami",
+   "chart": "postgresql",
+   "stars": 431,
+   "url": "https://charts.bitnami.com/bitnami",
+   "version": "18.12.16",
+   "appVersion": "18.6.0",
+   "status": "ok",
+   "workloads": 1
+  },
+  {
+   "rank": 9,
+   "repo": "k8s-dashboard",
+   "chart": "kubernetes-dashboard",
+   "stars": 365,
+   "url": "https://kubernetes.github.io/dashboard",
+   "status": "falhou",
+   "erro": "Error: looks like \"https://kubernetes.github.io/dashboard\" is not a valid chart repository or cannot be reached: failed to fetch https://kubernetes.github.io/dashboard/index.yaml : 404 Not Found",
+   "workloads": 0
+  },
+  {
+   "rank": 10,
+   "repo": "grafana",
+   "chart": "loki",
+   "stars": 333,
+   "url": "https://grafana.github.io/helm-charts",
+   "version": "7.5.0",
+   "appVersion": "3.6.16",
+   "status": "falhou",
+   "erro": "Use --debug flag to render out invalid YAML",
+   "workloads": 0
+  },
+  {
+   "rank": 11,
+   "repo": "metrics-server",
+   "chart": "metrics-server",
+   "stars": 320,
+   "url": "https://kubernetes-sigs.github.io/metrics-server/",
+   "version": "3.14.0",
+   "appVersion": "0.9.0",
+   "status": "ok",
+   "workloads": 1
+  },
+  {
+   "rank": 12,
+   "repo": "hashicorp",
+   "chart": "vault",
+   "stars": 298,
+   "url": "https://helm.releases.hashicorp.com",
+   "version": "0.34.1",
+   "appVersion": "2.0.4",
+   "status": "ok",
+   "workloads": 3
+  },
+  {
+   "rank": 13,
+   "repo": "gitlab",
+   "chart": "gitlab",
+   "stars": 282,
+   "url": "http://charts.gitlab.io/",
+   "version": "10.5.1",
+   "appVersion": "v19.5.1",
+   "status": "falhou",
+   "erro": "Use --debug flag to render out invalid YAML",
+   "workloads": 0
+  },
+  {
+   "rank": 14,
+   "repo": "harbor",
+   "chart": "harbor",
+   "stars": 275,
+   "url": "https://helm.goharbor.io",
+   "version": "1.19.4",
+   "appVersion": "2.15.4",
+   "status": "ok",
+   "workloads": 7
+  },
+  {
+   "rank": 15,
+   "repo": "bitnami",
+   "chart": "keycloak",
+   "stars": 275,
+   "url": "https://charts.bitnami.com/bitnami",
+   "version": "25.2.0",
+   "appVersion": "26.3.3",
+   "status": "ok",
+   "workloads": 2
+  },
+  {
+   "rank": 16,
+   "repo": "jenkinsci",
+   "chart": "jenkins",
+   "stars": 255,
+   "url": "https://charts.jenkins.io/",
+   "version": "5.10.0",
+   "appVersion": "2.580.1",
+   "status": "ok",
+   "workloads": 2
+  },
+  {
+   "rank": 17,
+   "repo": "external-secrets-operator",
+   "chart": "external-secrets",
+   "stars": 250,
+   "url": "https://charts.external-secrets.io/",
+   "version": "2.14.0",
+   "appVersion": "v2.14.0",
+   "status": "ok",
+   "workloads": 3
+  },
+  {
+   "rank": 18,
+   "repo": "external-dns",
+   "chart": "external-dns",
+   "stars": 240,
+   "url": "https://kubernetes-sigs.github.io/external-dns/",
+   "version": "1.23.0",
+   "appVersion": "0.23.0",
+   "status": "falhou",
+   "erro": "- at '/policy': got null, want string",
+   "workloads": 0
+  },
+  {
+   "rank": 19,
+   "repo": "longhorn",
+   "chart": "longhorn",
+   "stars": 225,
+   "url": "https://charts.longhorn.io",
+   "version": "1.13.0",
+   "appVersion": "v1.13.0",
+   "status": "ok",
+   "workloads": 7
+  },
+  {
+   "rank": 20,
+   "repo": "bitnami",
+   "chart": "rabbitmq",
+   "stars": 215,
+   "url": "https://charts.bitnami.com/bitnami",
+   "version": "16.0.14",
+   "appVersion": "4.1.3",
+   "status": "ok",
+   "workloads": 1
+  },
+  {
+   "rank": 21,
+   "repo": "gitlab",
+   "chart": "gitlab-runner",
+   "stars": 213,
+   "url": "http://charts.gitlab.io/",
+   "version": "0.94.1",
+   "appVersion": "19.5.1",
+   "status": "ok",
+   "workloads": 1
+  },
+  {
+   "rank": 22,
+   "repo": "aws",
+   "chart": "aws-load-balancer-controller",
+   "stars": 211,
+   "url": "https://aws.github.io/eks-charts",
+   "version": "3.6.2",
+   "appVersion": "v3.6.2",
+   "status": "falhou",
+   "erro": "Use --debug flag to render out invalid YAML",
+   "workloads": 0
+  },
+  {
+   "rank": 23,
+   "repo": "bitnami",
+   "chart": "kafka",
+   "stars": 204,
+   "url": "https://charts.bitnami.com/bitnami",
+   "version": "32.4.3",
+   "appVersion": "4.0.0",
+   "status": "ok",
+   "workloads": 1
+  },
+  {
+   "rank": 24,
+   "repo": "cilium",
+   "chart": "cilium",
+   "stars": 202,
+   "url": "https://helm.cilium.io/",
+   "version": "1.20.4",
+   "appVersion": "1.20.4",
+   "status": "ok",
+   "workloads": 3
+  },
+  {
+   "rank": 25,
+   "repo": "bitnami",
+   "chart": "external-dns",
+   "stars": 200,
+   "url": "https://charts.bitnami.com/bitnami",
+   "version": "9.0.3",
+   "appVersion": "0.18.0",
+   "status": "ok",
+   "workloads": 1
+  },
+  {
+   "rank": 26,
+   "repo": "apache-airflow",
+   "chart": "airflow",
+   "stars": 198,
+   "url": "https://airflow.apache.org/",
+   "version": "1.22.0",
+   "appVersion": "3.2.2",
+   "status": "ok",
+   "workloads": 10
+  },
+  {
+   "rank": 27,
+   "repo": "bitnami",
+   "chart": "mysql",
+   "stars": 197,
+   "url": "https://charts.bitnami.com/bitnami",
+   "version": "14.0.3",
+   "appVersion": "9.4.0",
+   "status": "ok",
+   "workloads": 1
+  },
+  {
+   "rank": 28,
+   "repo": "elastic",
+   "chart": "elasticsearch",
+   "stars": 194,
+   "url": "https://helm.elastic.co",
+   "version": "8.5.1",
+   "appVersion": "8.5.1",
+   "status": "ok",
+   "workloads": 2
+  },
+  {
+   "rank": 29,
+   "repo": "bitnami",
+   "chart": "mongodb",
+   "stars": 193,
+   "url": "https://charts.bitnami.com/bitnami",
+   "version": "20.0.12",
+   "appVersion": "9.0.4",
+   "status": "ok",
+   "workloads": 1
+  },
+  {
+   "rank": 30,
+   "repo": "vmware-tanzu",
+   "chart": "velero",
+   "stars": 191,
+   "url": "https://vmware-tanzu.github.io/helm-charts/",
+   "version": "12.2.1",
+   "appVersion": "1.18.2",
+   "status": "ok",
+   "workloads": 2
+  },
+  {
+   "rank": 31,
+   "repo": "nextcloud",
+   "chart": "nextcloud",
+   "stars": 190,
+   "url": "https://nextcloud.github.io/helm/",
+   "version": "9.4.1",
+   "appVersion": "35.0.2",
+   "status": "ok",
+   "workloads": 1
+  },
+  {
+   "rank": 32,
+   "repo": "bitnami",
+   "chart": "minio",
+   "stars": 169,
+   "url": "https://charts.bitnami.com/bitnami",
+   "version": "17.0.21",
+   "appVersion": "2025.7.23",
+   "status": "ok",
+   "workloads": 2
+  },
+  {
+   "rank": 33,
+   "repo": "cluster-autoscaler",
+   "chart": "cluster-autoscaler",
+   "stars": 168,
+   "url": "https://kubernetes.github.io/autoscaler",
+   "version": "9.59.0",
+   "appVersion": "1.35.0",
+   "status": "ok",
+   "workloads": 0
+  },
+  {
+   "rank": 34,
+   "repo": "metallb",
+   "chart": "metallb",
+   "stars": 154,
+   "url": "https://metallb.github.io/metallb",
+   "version": "0.16.1",
+   "appVersion": "v0.16.1",
+   "status": "ok",
+   "workloads": 4
+  },
+  {
+   "rank": 35,
+   "repo": "istio-official",
+   "chart": "istiod",
+   "stars": 143,
+   "url": "https://istio-release.storage.googleapis.com/charts",
+   "version": "1.30.7",
+   "appVersion": "1.30.7",
+   "status": "ok",
+   "workloads": 1
+  },
+  {
+   "rank": 36,
+   "repo": "rancher-stable",
+   "chart": "rancher",
+   "stars": 141,
+   "url": "https://releases.rancher.com/server-charts/stable",
+   "version": "2.15.2",
+   "appVersion": "v2.15.2",
+   "status": "ok",
+   "workloads": 3
+  },
+  {
+   "rank": 37,
+   "repo": "argo",
+   "chart": "argo-workflows",
+   "stars": 140,
+   "url": "https://argoproj.github.io/argo-helm",
+   "version": "2.0.14",
+   "appVersion": "v4.1.6",
+   "status": "ok",
+   "workloads": 3
+  },
+  {
+   "rank": 38,
+   "repo": "kyverno",
+   "chart": "kyverno",
+   "stars": 140,
+   "url": "https://kyverno.github.io/kyverno/",
+   "version": "3.9.2",
+   "appVersion": "v1.19.2",
+   "status": "ok",
+   "workloads": 12
+  },
+  {
+   "rank": 39,
+   "repo": "cloudnative-pg",
+   "chart": "cloudnative-pg",
+   "stars": 140,
+   "url": "https://cloudnative-pg.io/charts/",
+   "version": "0.29.1",
+   "appVersion": "1.30.1",
+   "status": "ok",
+   "workloads": 1
+  },
+  {
+   "rank": 40,
+   "repo": "gitea",
+   "chart": "gitea",
+   "stars": 135,
+   "url": "https://dl.gitea.com/charts",
+   "version": "12.7.0",
+   "appVersion": "1.27.0",
+   "status": "ok",
+   "workloads": 5
+  },
+  {
+   "rank": 41,
+   "repo": "sonarqube",
+   "chart": "sonarqube",
+   "stars": 135,
+   "url": "https://SonarSource.github.io/helm-chart-sonarqube",
+   "version": "2026.5.1003",
+   "appVersion": "2026.5.3",
+   "status": "falhou",
+   "erro": "Use --debug flag to render out invalid YAML",
+   "workloads": 0
+  },
+  {
+   "rank": 42,
+   "repo": "fluent",
+   "chart": "fluent-bit",
+   "stars": 128,
+   "url": "https://fluent.github.io/helm-charts",
+   "version": "0.58.3",
+   "appVersion": "5.1.3",
+   "status": "ok",
+   "workloads": 2
+  },
+  {
+   "rank": 43,
+   "repo": "datadog",
+   "chart": "datadog",
+   "stars": 117,
+   "url": "https://helm.datadoghq.com",
+   "version": "3.261.1",
+   "appVersion": "7",
+   "status": "ok",
+   "workloads": 2
+  },
+  {
+   "rank": 44,
+   "repo": "oauth2-proxy",
+   "chart": "oauth2-proxy",
+   "stars": 113,
+   "url": "https://oauth2-proxy.github.io/manifests",
+   "version": "10.7.1",
+   "appVersion": "7.15.5",
+   "status": "ok",
+   "workloads": 1
+  },
+  {
+   "rank": 45,
+   "repo": "runix",
+   "chart": "pgadmin4",
+   "stars": 112,
+   "url": "https://helm.runix.net/",
+   "version": "1.70.4",
+   "appVersion": "9.18",
+   "status": "ok",
+   "workloads": 2
+  },
+  {
+   "rank": 46,
+   "repo": "bitnami",
+   "chart": "nginx",
+   "stars": 107,
+   "url": "https://charts.bitnami.com/bitnami",
+   "version": "25.2.13",
+   "appVersion": "1.31.8",
+   "status": "ok",
+   "workloads": 1
+  },
+  {
+   "rank": 47,
+   "repo": "bitnami",
+   "chart": "wordpress",
+   "stars": 107,
+   "url": "https://charts.bitnami.com/bitnami",
+   "version": "34.2.3",
+   "appVersion": "7.1.3",
+   "status": "ok",
+   "workloads": 2
+  },
+  {
+   "rank": 48,
+   "repo": "bitnami",
+   "chart": "thanos",
+   "stars": 106,
+   "url": "https://charts.bitnami.com/bitnami",
+   "version": "17.3.1",
+   "appVersion": "0.39.2",
+   "status": "ok",
+   "workloads": 2
+  },
+  {
+   "rank": 49,
+   "repo": "goauthentik",
+   "chart": "authentik",
+   "stars": 104,
+   "url": "https://charts.goauthentik.io/",
+   "version": "2026.8.5",
+   "appVersion": "2026.8.5",
+   "status": "ok",
+   "workloads": 2
+  },
+  {
+   "rank": 50,
+   "repo": "bitnami-labs",
+   "chart": "sealed-secrets",
+   "stars": 102,
+   "url": "https://bitnami-labs.github.io/sealed-secrets/",
+   "status": "falhou",
+   "erro": "Error: looks like \"https://bitnami-labs.github.io/sealed-secrets/\" is not a valid chart repository or cannot be reached: failed to fetch https://bitnami-labs.github.io/sealed-secrets/index.yaml : 404 Not Found",
+   "workloads": 0
+  },
+  {
+   "rank": 51,
+   "repo": "nginx",
+   "chart": "nginx-ingress",
+   "stars": 100,
+   "url": "https://helm.nginx.com/stable",
+   "version": "2.8.0",
+   "appVersion": "5.7.0",
+   "status": "ok",
+   "workloads": 1
+  },
+  {
+   "rank": 52,
+   "repo": "kedacore",
+   "chart": "keda",
+   "stars": 100,
+   "url": "https://kedacore.github.io/charts",
+   "version": "2.21.0",
+   "appVersion": "2.21.0",
+   "status": "ok",
+   "workloads": 3
+  },
+  {
+   "rank": 53,
+   "repo": "argo",
+   "chart": "argocd-apps",
+   "stars": 99,
+   "url": "https://argoproj.github.io/argo-helm",
+   "version": "2.0.7",
+   "appVersion": "",
+   "status": "falhou",
+   "erro": "",
+   "workloads": 0
+  },
+  {
+   "rank": 54,
+   "repo": "nfs-subdir-external-provisioner",
+   "chart": "nfs-subdir-external-provisioner",
+   "stars": 99,
+   "url": "https://kubernetes-sigs.github.io/nfs-subdir-external-provisioner",
+   "version": "4.0.18",
+   "appVersion": "4.0.2",
+   "status": "ok",
+   "workloads": 1
+  },
+  {
+   "rank": 55,
+   "repo": "artifact-hub",
+   "chart": "artifact-hub",
+   "stars": 96,
+   "url": "https://artifacthub.github.io/helm-charts/",
+   "version": "1.23.0",
+   "appVersion": "1.23.0",
+   "status": "ok",
+   "workloads": 6
+  },
+  {
+   "rank": 56,
+   "repo": "mojo2600",
+   "chart": "pihole",
+   "stars": 93,
+   "url": "https://mojo2600.github.io/pihole-kubernetes/",
+   "version": "2.38.0",
+   "appVersion": "2026.07.2",
+   "status": "ok",
+   "workloads": 2
+  },
+  {
+   "rank": 57,
+   "repo": "prometheus-community",
+   "chart": "kube-state-metrics",
+   "stars": 92,
+   "url": "https://prometheus-community.github.io/helm-charts",
+   "version": "8.7.1",
+   "appVersion": "2.20.0",
+   "status": "ok",
+   "workloads": 1
+  },
+  {
+   "rank": 58,
+   "repo": "hashicorp",
+   "chart": "consul",
+   "stars": 90,
+   "url": "https://helm.releases.hashicorp.com",
+   "version": "2.1.0",
+   "appVersion": "2.1.0",
+   "status": "ok",
+   "workloads": 9
+  },
+  {
+   "rank": 59,
+   "repo": "community-charts",
+   "chart": "n8n",
+   "stars": 90,
+   "url": "https://community-charts.github.io/helm-charts",
+   "version": "1.24.43",
+   "appVersion": "2.41.6",
+   "status": "ok",
+   "workloads": 1
+  },
+  {
+   "rank": 60,
+   "repo": "grafana",
+   "chart": "alloy",
+   "stars": 87,
+   "url": "https://grafana.github.io/helm-charts",
+   "version": "1.14.3",
+   "appVersion": "v1.21.2",
+   "status": "ok",
+   "workloads": 1
+  }
+ ],
+ "workloads": [
+  {
+   "chart": "prometheus-community/kube-prometheus-stack",
+   "kind": "DaemonSet",
+   "name": "tcc-prometheus-node-exporter",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": true,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "quay.io/prometheus/node-exporter:v1.12.1-distroless"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "pass",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "prometheus-community/kube-prometheus-stack",
+   "kind": "Deployment",
+   "name": "tcc-grafana",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": true,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "quay.io/kiwigrid/k8s-sidecar:2.14.1",
+     "quay.io/kiwigrid/k8s-sidecar:2.14.1",
+     "docker.io/grafana/grafana:13.2.4-distroless"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "pass",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "prometheus-community/kube-prometheus-stack",
+   "kind": "Deployment",
+   "name": "tcc-kube-state-metrics",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": true,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "registry.k8s.io/kube-state-metrics/kube-state-metrics:v2.20.0"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "pass",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "prometheus-community/kube-prometheus-stack",
+   "kind": "Deployment",
+   "name": "tcc-kube-prometheus-stack-operator",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": true,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "quay.io/prometheus-operator/prometheus-operator:v0.94.2"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "pass",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "prometheus-community/kube-prometheus-stack",
+   "kind": "Pod",
+   "name": "tcc-grafana-test",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": true,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "docker.io/bats/bats:1.14.0"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "pass",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "prometheus-community/kube-prometheus-stack",
+   "kind": "Job",
+   "name": "tcc-kube-prometheus-stack-admission-create",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": true,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "ghcr.io/jkroepke/kube-webhook-certgen:1.11.0"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "pass",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "prometheus-community/kube-prometheus-stack",
+   "kind": "Job",
+   "name": "tcc-kube-prometheus-stack-admission-patch",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": true,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "ghcr.io/jkroepke/kube-webhook-certgen:1.11.0"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "pass",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "cert-manager/cert-manager",
+   "kind": "Deployment",
+   "name": "tcc-cert-manager-cainjector",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": true,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "quay.io/jetstack/cert-manager-cainjector:v1.21.3"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "cert-manager/cert-manager",
+   "kind": "Deployment",
+   "name": "tcc-cert-manager",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": true,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "quay.io/jetstack/cert-manager-controller:v1.21.3"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "cert-manager/cert-manager",
+   "kind": "Deployment",
+   "name": "tcc-cert-manager-webhook",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": true,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "quay.io/jetstack/cert-manager-webhook:v1.21.3"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "cert-manager/cert-manager",
+   "kind": "Job",
+   "name": "tcc-cert-manager-startupapicheck",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": true,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "quay.io/jetstack/cert-manager-startupapicheck:v1.21.3"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "argo/argo-cd",
+   "kind": "Deployment",
+   "name": "tcc-argocd-applicationset-controller",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": true,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "quay.io/argoproj/argocd:v3.5.6"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "argo/argo-cd",
+   "kind": "Deployment",
+   "name": "tcc-argocd-notifications-controller",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": true,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "quay.io/argoproj/argocd:v3.5.6"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "argo/argo-cd",
+   "kind": "Deployment",
+   "name": "tcc-argocd-repo-server",
+   "features": {
+    "init_count": 1,
+    "init_privileged": false,
+    "init_no_limits": true,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": true,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "quay.io/argoproj/argocd:v3.5.6",
+     "quay.io/argoproj/argocd:v3.5.6"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "argo/argo-cd",
+   "kind": "Deployment",
+   "name": "tcc-argocd-server",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": true,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "quay.io/argoproj/argocd:v3.5.6"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "argo/argo-cd",
+   "kind": "Deployment",
+   "name": "tcc-argocd-dex-server",
+   "features": {
+    "init_count": 1,
+    "init_privileged": false,
+    "init_no_limits": true,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": true,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "ghcr.io/dexidp/dex:v2.46.1",
+     "quay.io/argoproj/argocd:v3.5.6"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "argo/argo-cd",
+   "kind": "Deployment",
+   "name": "tcc-argocd-redis",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": true,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "ecr-public.aws.com/docker/library/redis:8.6.4-alpine"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "pass",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "argo/argo-cd",
+   "kind": "StatefulSet",
+   "name": "tcc-argocd-application-controller",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": true,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "quay.io/argoproj/argocd:v3.5.6"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "argo/argo-cd",
+   "kind": "Job",
+   "name": "tcc-argocd-redis-secret-init",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": true,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "quay.io/argoproj/argocd:v3.5.6"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "ingress-nginx/ingress-nginx",
+   "kind": "Deployment",
+   "name": "tcc-ingress-nginx-controller",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": true,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "registry.k8s.io/ingress-nginx/controller:v1.15.1@sha256:594ceea76b01c592858f803f9ff4d2cb40542cae2060410b2c95f75907d659e1"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "ingress-nginx/ingress-nginx",
+   "kind": "Job",
+   "name": "tcc-ingress-nginx-admission-create",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": true,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "registry.k8s.io/ingress-nginx/kube-webhook-certgen:v1.6.9@sha256:01038e7de14b78d702d2849c3aad72fd25903c4765af63cf16aa3398f5d5f2dd"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "ingress-nginx/ingress-nginx",
+   "kind": "Job",
+   "name": "tcc-ingress-nginx-admission-patch",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": true,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "registry.k8s.io/ingress-nginx/kube-webhook-certgen:v1.6.9@sha256:01038e7de14b78d702d2849c3aad72fd25903c4765af63cf16aa3398f5d5f2dd"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "prometheus-community/prometheus",
+   "kind": "DaemonSet",
+   "name": "tcc-prometheus-node-exporter",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": true,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "quay.io/prometheus/node-exporter:v1.12.1"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "pass",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "prometheus-community/prometheus",
+   "kind": "Deployment",
+   "name": "tcc-kube-state-metrics",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": true,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "registry.k8s.io/kube-state-metrics/kube-state-metrics:v2.20.0"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "pass",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "prometheus-community/prometheus",
+   "kind": "Deployment",
+   "name": "tcc-prometheus-pushgateway",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": true,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "quay.io/prometheus/pushgateway:v1.11.4"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "pass",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "prometheus-community/prometheus",
+   "kind": "Deployment",
+   "name": "tcc-prometheus-server",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": true,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "quay.io/prometheus-operator/prometheus-config-reloader:v0.94.2",
+     "quay.io/prometheus/prometheus:v3.15.1"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "pass",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "prometheus-community/prometheus",
+   "kind": "StatefulSet",
+   "name": "tcc-alertmanager",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": true,
+    "all_containers_nonroot": true,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "quay.io/prometheus-operator/prometheus-config-reloader:v0.94.2",
+     "quay.io/prometheus/alertmanager:v0.34.1"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "pass",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "bitnami/redis",
+   "kind": "StatefulSet",
+   "name": "tcc-redis-master",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": true,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "registry-1.docker.io/bitnami/redis:latest"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "pass",
+   "corr:require-limits": "pass",
+   "orig:restrict-latest-tag": "fail",
+   "corr:restrict-latest-tag": "fail"
+  },
+  {
+   "chart": "bitnami/redis",
+   "kind": "StatefulSet",
+   "name": "tcc-redis-replicas",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": true,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "registry-1.docker.io/bitnami/redis:latest"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "pass",
+   "corr:require-limits": "pass",
+   "orig:restrict-latest-tag": "fail",
+   "corr:restrict-latest-tag": "fail"
+  },
+  {
+   "chart": "traefik/traefik",
+   "kind": "Deployment",
+   "name": "tcc-traefik",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": true,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "docker.io/traefik:v3.7.16"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "pass",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "bitnami/postgresql",
+   "kind": "StatefulSet",
+   "name": "tcc-postgresql",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": true,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "registry-1.docker.io/bitnami/postgresql:latest"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "pass",
+   "corr:require-limits": "pass",
+   "orig:restrict-latest-tag": "fail",
+   "corr:restrict-latest-tag": "fail"
+  },
+  {
+   "chart": "metrics-server/metrics-server",
+   "kind": "Deployment",
+   "name": "tcc-metrics-server",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": true,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "registry.k8s.io/metrics-server/metrics-server:v0.9.0"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "hashicorp/vault",
+   "kind": "Deployment",
+   "name": "tcc-vault-agent-injector",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": true,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "hashicorp/vault-k8s:1.7.6"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "pass",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "hashicorp/vault",
+   "kind": "StatefulSet",
+   "name": "tcc-vault",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": true,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "hashicorp/vault:2.0.4"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "pass",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "hashicorp/vault",
+   "kind": "Pod",
+   "name": "tcc-vault-server-test",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "hashicorp/vault:2.0.4"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "fail",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "harbor/harbor",
+   "kind": "Deployment",
+   "name": "tcc-harbor-core",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": true,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "docker.io/goharbor/harbor-core:v2.15.4"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "harbor/harbor",
+   "kind": "Deployment",
+   "name": "tcc-harbor-jobservice",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": true,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "docker.io/goharbor/harbor-jobservice:v2.15.4"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "harbor/harbor",
+   "kind": "Deployment",
+   "name": "tcc-harbor-portal",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": true,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "docker.io/goharbor/harbor-portal:v2.15.4"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "harbor/harbor",
+   "kind": "Deployment",
+   "name": "tcc-harbor-registry",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": true,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "docker.io/goharbor/registry-photon:v2.15.4",
+     "docker.io/goharbor/harbor-registryctl:v2.15.4"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "harbor/harbor",
+   "kind": "StatefulSet",
+   "name": "tcc-harbor-database",
+   "features": {
+    "init_count": 1,
+    "init_privileged": false,
+    "init_no_limits": true,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": true,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "docker.io/goharbor/harbor-db:v2.15.4",
+     "docker.io/goharbor/harbor-db:v2.15.4"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "harbor/harbor",
+   "kind": "StatefulSet",
+   "name": "tcc-harbor-redis",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": true,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "docker.io/goharbor/valkey-photon:v2.15.4"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "harbor/harbor",
+   "kind": "StatefulSet",
+   "name": "tcc-harbor-trivy",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": true,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "docker.io/goharbor/trivy-adapter-photon:v2.15.4"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "pass",
+   "corr:require-limits": "pass",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "bitnami/keycloak",
+   "kind": "StatefulSet",
+   "name": "tcc-postgresql",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": true,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "docker.io/bitnami/postgresql:17.6.0-debian-12-r0"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "pass",
+   "corr:require-limits": "pass",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "bitnami/keycloak",
+   "kind": "StatefulSet",
+   "name": "tcc-keycloak",
+   "features": {
+    "init_count": 1,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": true,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "docker.io/bitnami/keycloak:26.3.3-debian-12-r0",
+     "docker.io/bitnami/keycloak:26.3.3-debian-12-r0"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "pass",
+   "corr:require-limits": "pass",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "jenkinsci/jenkins",
+   "kind": "StatefulSet",
+   "name": "tcc-jenkins",
+   "features": {
+    "init_count": 2,
+    "init_privileged": false,
+    "init_no_limits": true,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": true,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "docker.io/jenkins/jenkins:2.580.1-jdk25",
+     "docker.io/kiwigrid/k8s-sidecar:2.14.1",
+     "docker.io/kiwigrid/k8s-sidecar:2.14.1",
+     "docker.io/jenkins/jenkins:2.580.1-jdk25"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "pass",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "jenkinsci/jenkins",
+   "kind": "Pod",
+   "name": "tcc-ui-test-e9lpg",
+   "features": {
+    "init_count": 1,
+    "init_privileged": false,
+    "init_no_limits": true,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "docker.io/jenkins/jenkins:2.580.1-jdk25",
+     "docker.io/bats/bats:1.14.0"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "fail",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "external-secrets-operator/external-secrets",
+   "kind": "Deployment",
+   "name": "tcc-external-secrets-cert-controller",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": true,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "ghcr.io/external-secrets/external-secrets:v2.14.0"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "external-secrets-operator/external-secrets",
+   "kind": "Deployment",
+   "name": "tcc-external-secrets",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": true,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "ghcr.io/external-secrets/external-secrets:v2.14.0"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "external-secrets-operator/external-secrets",
+   "kind": "Deployment",
+   "name": "tcc-external-secrets-webhook",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": true,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "ghcr.io/external-secrets/external-secrets:v2.14.0"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "longhorn/longhorn",
+   "kind": "DaemonSet",
+   "name": "longhorn-manager",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "docker.io/longhornio/longhorn-manager:v1.13.0",
+     "docker.io/longhornio/longhorn-share-manager:v1.13.0"
+    ]
+   },
+   "orig:restrict-privileged": "fail",
+   "corr:restrict-privileged": "fail",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "fail",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "longhorn/longhorn",
+   "kind": "Deployment",
+   "name": "longhorn-driver-deployer",
+   "features": {
+    "init_count": 1,
+    "init_privileged": false,
+    "init_no_limits": true,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": true,
+    "images": [
+     "docker.io/longhornio/longhorn-manager:v1.13.0",
+     "docker.io/longhornio/longhorn-manager:v1.13.0"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "fail",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "longhorn/longhorn",
+   "kind": "Deployment",
+   "name": "longhorn-global-manager",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "docker.io/longhornio/longhorn-manager:v1.13.0"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "fail",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "longhorn/longhorn",
+   "kind": "Deployment",
+   "name": "longhorn-ui",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "docker.io/longhornio/longhorn-ui:v1.13.0"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "fail",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "longhorn/longhorn",
+   "kind": "Job",
+   "name": "longhorn-post-upgrade",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "docker.io/longhornio/longhorn-manager:v1.13.0"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "fail",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "longhorn/longhorn",
+   "kind": "Job",
+   "name": "longhorn-pre-upgrade",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "docker.io/longhornio/longhorn-manager:v1.13.0"
+    ]
+   },
+   "orig:restrict-privileged": "fail",
+   "corr:restrict-privileged": "fail",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "fail",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "longhorn/longhorn",
+   "kind": "Job",
+   "name": "longhorn-uninstall",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "docker.io/longhornio/longhorn-manager:v1.13.0"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "fail",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "bitnami/rabbitmq",
+   "kind": "StatefulSet",
+   "name": "tcc-rabbitmq",
+   "features": {
+    "init_count": 1,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": true,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "docker.io/bitnami/rabbitmq:4.1.3-debian-12-r1",
+     "docker.io/bitnami/rabbitmq:4.1.3-debian-12-r1"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "pass",
+   "corr:require-limits": "pass",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "gitlab/gitlab-runner",
+   "kind": "Deployment",
+   "name": "tcc-gitlab-runner",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": true,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "registry.gitlab.com/gitlab-org/gitlab-runner:alpine-v19.5.1"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "bitnami/kafka",
+   "kind": "StatefulSet",
+   "name": "tcc-kafka-controller",
+   "features": {
+    "init_count": 1,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": true,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "docker.io/bitnami/kafka:4.0.0-debian-12-r10",
+     "docker.io/bitnami/kafka:4.0.0-debian-12-r10"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "pass",
+   "corr:require-limits": "pass",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "cilium/cilium",
+   "kind": "DaemonSet",
+   "name": "cilium",
+   "features": {
+    "init_count": 6,
+    "init_privileged": true,
+    "init_no_limits": true,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "quay.io/cilium/cilium:v1.20.4@sha256:20fe92e4c86641233a450098c158d2d29085f3419931ab6bf681d2485dedf16e",
+     "quay.io/cilium/cilium:v1.20.4@sha256:20fe92e4c86641233a450098c158d2d29085f3419931ab6bf681d2485dedf16e",
+     "quay.io/cilium/cilium:v1.20.4@sha256:20fe92e4c86641233a450098c158d2d29085f3419931ab6bf681d2485dedf16e",
+     "quay.io/cilium/cilium:v1.20.4@sha256:20fe92e4c86641233a450098c158d2d29085f3419931ab6bf681d2485dedf16e",
+     "quay.io/cilium/cilium:v1.20.4@sha256:20fe92e4c86641233a450098c158d2d29085f3419931ab6bf681d2485dedf16e",
+     "quay.io/cilium/cilium:v1.20.4@sha256:20fe92e4c86641233a450098c158d2d29085f3419931ab6bf681d2485dedf16e",
+     "quay.io/cilium/cilium:v1.20.4@sha256:20fe92e4c86641233a450098c158d2d29085f3419931ab6bf681d2485dedf16e"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "fail",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "fail",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "cilium/cilium",
+   "kind": "DaemonSet",
+   "name": "cilium-envoy",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "quay.io/cilium/cilium-envoy:v1.39.5-1792733054-8c73b2816bc8239e27f1fd53b271884688137459@sha256:547ab45f6092f681d9f54f3be9fa8fb1e705c9c5dc2df388efe3a52aa6965629"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "fail",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "cilium/cilium",
+   "kind": "Deployment",
+   "name": "cilium-operator",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "quay.io/cilium/operator-generic:v1.20.4@sha256:7a7a3489dc66ad67e420d285c8a8d2e169b0957ad15e120f593d27081bf38d82"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "fail",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "bitnami/external-dns",
+   "kind": "Deployment",
+   "name": "tcc-external-dns",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": true,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "docker.io/bitnami/external-dns:0.18.0-debian-12-r4"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "pass",
+   "corr:require-limits": "pass",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "apache-airflow/airflow",
+   "kind": "Deployment",
+   "name": "tcc-api-server",
+   "features": {
+    "init_count": 1,
+    "init_privileged": false,
+    "init_no_limits": true,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "apache/airflow:3.2.2",
+     "apache/airflow:3.2.2"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "fail",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "apache-airflow/airflow",
+   "kind": "Deployment",
+   "name": "tcc-dag-processor",
+   "features": {
+    "init_count": 1,
+    "init_privileged": false,
+    "init_no_limits": true,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "apache/airflow:3.2.2",
+     "apache/airflow:3.2.2",
+     "apache/airflow:3.2.2"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "fail",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "apache-airflow/airflow",
+   "kind": "Deployment",
+   "name": "tcc-scheduler",
+   "features": {
+    "init_count": 1,
+    "init_privileged": false,
+    "init_no_limits": true,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "apache/airflow:3.2.2",
+     "apache/airflow:3.2.2",
+     "apache/airflow:3.2.2"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "fail",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "apache-airflow/airflow",
+   "kind": "Deployment",
+   "name": "tcc-statsd",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "quay.io/prometheus/statsd-exporter:v0.30.0"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "fail",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "apache-airflow/airflow",
+   "kind": "StatefulSet",
+   "name": "tcc-postgresql",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": true,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "docker.io/bitnamilegacy/postgresql:16.1.0-debian-11-r15"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "apache-airflow/airflow",
+   "kind": "StatefulSet",
+   "name": "tcc-redis",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": true,
+    "images": [
+     "redis:7.2-bookworm"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "fail",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "apache-airflow/airflow",
+   "kind": "StatefulSet",
+   "name": "tcc-triggerer",
+   "features": {
+    "init_count": 1,
+    "init_privileged": false,
+    "init_no_limits": true,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "apache/airflow:3.2.2",
+     "apache/airflow:3.2.2",
+     "apache/airflow:3.2.2"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "fail",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "apache-airflow/airflow",
+   "kind": "StatefulSet",
+   "name": "tcc-worker",
+   "features": {
+    "init_count": 1,
+    "init_privileged": false,
+    "init_no_limits": true,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "apache/airflow:3.2.2",
+     "apache/airflow:3.2.2",
+     "apache/airflow:3.2.2"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "fail",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "apache-airflow/airflow",
+   "kind": "Job",
+   "name": "tcc-create-user",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "apache/airflow:3.2.2"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "fail",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "apache-airflow/airflow",
+   "kind": "Job",
+   "name": "tcc-run-airflow-migrations",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "apache/airflow:3.2.2"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "fail",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "bitnami/mysql",
+   "kind": "StatefulSet",
+   "name": "tcc-mysql",
+   "features": {
+    "init_count": 1,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": true,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "docker.io/bitnami/mysql:9.4.0-debian-12-r1",
+     "docker.io/bitnami/mysql:9.4.0-debian-12-r1"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "pass",
+   "corr:require-limits": "pass",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "elastic/elasticsearch",
+   "kind": "StatefulSet",
+   "name": "elasticsearch-master",
+   "features": {
+    "init_count": 1,
+    "init_privileged": true,
+    "init_no_limits": true,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": false,
+    "container_overrides_root": true,
+    "uid0": true,
+    "images": [
+     "docker.elastic.co/elasticsearch/elasticsearch:8.5.1",
+     "docker.elastic.co/elasticsearch/elasticsearch:8.5.1"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "fail",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "fail",
+   "orig:require-limits": "pass",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "elastic/elasticsearch",
+   "kind": "Pod",
+   "name": "tcc-folvu-test",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "docker.elastic.co/elasticsearch/elasticsearch:8.5.1"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "fail",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "bitnami/mongodb",
+   "kind": "Deployment",
+   "name": "tcc-mongodb",
+   "features": {
+    "init_count": 1,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": true,
+    "pod_nonroot": false,
+    "all_containers_nonroot": true,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "registry-1.docker.io/bitnami/mongodb:latest",
+     "registry-1.docker.io/bitnami/mongodb:latest"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "pass",
+   "corr:require-limits": "pass",
+   "orig:restrict-latest-tag": "fail",
+   "corr:restrict-latest-tag": "fail"
+  },
+  {
+   "chart": "vmware-tanzu/velero",
+   "kind": "Deployment",
+   "name": "velero",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "docker.io/velero/velero:v1.18.2"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "fail",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "vmware-tanzu/velero",
+   "kind": "Job",
+   "name": "tcc-velero-upgrade-crds",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "docker.io/velero/velero:v1.18.2"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "fail",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "nextcloud/nextcloud",
+   "kind": "Deployment",
+   "name": "tcc-nextcloud",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "docker.io/library/nextcloud:35.0.2-apache"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "fail",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "bitnami/minio",
+   "kind": "Deployment",
+   "name": "tcc-minio",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": true,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "docker.io/bitnami/minio:2025.7.23-debian-12-r3"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "pass",
+   "corr:require-limits": "pass",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "bitnami/minio",
+   "kind": "Deployment",
+   "name": "tcc-minio-console",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": true,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "docker.io/bitnami/minio-object-browser:2.0.2-debian-12-r3"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "pass",
+   "corr:require-limits": "pass",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "metallb/metallb",
+   "kind": "DaemonSet",
+   "name": "tcc-frr-k8s",
+   "features": {
+    "init_count": 4,
+    "init_privileged": false,
+    "init_no_limits": true,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "quay.io/metallb/frr-k8s:v0.0.25",
+     "quay.io/frrouting/frr:10.4.3",
+     "quay.io/frrouting/frr:10.4.3",
+     "quay.io/frrouting/frr:10.4.3",
+     "quay.io/frrouting/frr:10.4.3",
+     "quay.io/frrouting/frr:10.4.3",
+     "quay.io/metallb/frr-k8s:v0.0.25",
+     "quay.io/metallb/frr-k8s:v0.0.25",
+     "quay.io/metallb/frr-k8s:v0.0.25"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "fail",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "metallb/metallb",
+   "kind": "DaemonSet",
+   "name": "tcc-metallb-speaker",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "quay.io/metallb/speaker:v0.16.1"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "fail",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "metallb/metallb",
+   "kind": "Deployment",
+   "name": "tcc-frr-k8s-statuscleaner",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "quay.io/metallb/frr-k8s:v0.0.25"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "fail",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "metallb/metallb",
+   "kind": "Deployment",
+   "name": "tcc-metallb-controller",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": true,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "quay.io/metallb/controller:v0.16.1"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "pass",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "istio-official/istiod",
+   "kind": "Deployment",
+   "name": "istiod",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": true,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "registry.istio.io/release/pilot:1.30.7"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "rancher-stable/rancher",
+   "kind": "Deployment",
+   "name": "tcc-rancher",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "rancher/rancher:v2.15.2"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "fail",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "rancher-stable/rancher",
+   "kind": "Job",
+   "name": "tcc-rancher-post-delete",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": false,
+    "container_overrides_root": true,
+    "uid0": true,
+    "images": [
+     "rancher/shell:v0.8.2"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "fail",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "rancher-stable/rancher",
+   "kind": "Job",
+   "name": "tcc-rancher-pre-upgrade",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": false,
+    "container_overrides_root": true,
+    "uid0": true,
+    "images": [
+     "rancher/shell:v0.8.2"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "fail",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "argo/argo-workflows",
+   "kind": "Deployment",
+   "name": "tcc-argo-workflows-workflow-controller",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": true,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "quay.io/argoproj/workflow-controller:v4.1.6"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "argo/argo-workflows",
+   "kind": "Deployment",
+   "name": "tcc-argo-workflows-server",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": true,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "quay.io/argoproj/argocli:v4.1.6"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "argo/argo-workflows",
+   "kind": "Job",
+   "name": "tcc-argo-workflows-crd-install",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": true,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "quay.io/argoproj/argo-workflows-crdinstaller:v4.1.6"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "kyverno/kyverno",
+   "kind": "Deployment",
+   "name": "kyverno-admission-controller",
+   "features": {
+    "init_count": 1,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": true,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "reg.kyverno.io/kyverno/kyverno:v1.19.2",
+     "reg.kyverno.io/kyverno/kyvernopre:v1.19.2"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "kyverno/kyverno",
+   "kind": "Deployment",
+   "name": "kyverno-background-controller",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": true,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "reg.kyverno.io/kyverno/background-controller:v1.19.2"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "kyverno/kyverno",
+   "kind": "Deployment",
+   "name": "kyverno-cleanup-controller",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": true,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "reg.kyverno.io/kyverno/cleanup-controller:v1.19.2"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "kyverno/kyverno",
+   "kind": "Deployment",
+   "name": "kyverno-reports-controller",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": true,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "reg.kyverno.io/kyverno/reports-controller:v1.19.2"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "kyverno/kyverno",
+   "kind": "Pod",
+   "name": "tcc-kyverno-admission-controller-metrics",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": true,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "ghcr.io/kyverno/readiness-checker:latest"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "pass",
+   "corr:require-limits": "pass",
+   "orig:restrict-latest-tag": "fail",
+   "corr:restrict-latest-tag": "fail"
+  },
+  {
+   "chart": "kyverno/kyverno",
+   "kind": "Pod",
+   "name": "tcc-kyverno-cleanup-controller-liveness",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": true,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "ghcr.io/kyverno/readiness-checker:latest"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "pass",
+   "corr:require-limits": "pass",
+   "orig:restrict-latest-tag": "fail",
+   "corr:restrict-latest-tag": "fail"
+  },
+  {
+   "chart": "kyverno/kyverno",
+   "kind": "Pod",
+   "name": "tcc-kyverno-cleanup-controller-metrics",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": true,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "ghcr.io/kyverno/readiness-checker:latest"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "pass",
+   "corr:require-limits": "pass",
+   "orig:restrict-latest-tag": "fail",
+   "corr:restrict-latest-tag": "fail"
+  },
+  {
+   "chart": "kyverno/kyverno",
+   "kind": "Pod",
+   "name": "tcc-kyverno-cleanup-controller-readiness",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": true,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "ghcr.io/kyverno/readiness-checker:latest"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "pass",
+   "corr:require-limits": "pass",
+   "orig:restrict-latest-tag": "fail",
+   "corr:restrict-latest-tag": "fail"
+  },
+  {
+   "chart": "kyverno/kyverno",
+   "kind": "Pod",
+   "name": "tcc-kyverno-reports-controller-metrics",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": true,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "ghcr.io/kyverno/readiness-checker:latest"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "pass",
+   "corr:require-limits": "pass",
+   "orig:restrict-latest-tag": "fail",
+   "corr:restrict-latest-tag": "fail"
+  },
+  {
+   "chart": "kyverno/kyverno",
+   "kind": "Job",
+   "name": "tcc-kyverno-migrate-resources",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": true,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "reg.kyverno.io/kyverno/kyverno-cli:v1.19.2"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "pass",
+   "corr:require-limits": "pass",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "kyverno/kyverno",
+   "kind": "Job",
+   "name": "tcc-kyverno-rm-webhooks",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": true,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "ghcr.io/kyverno/readiness-checker:v1.19.2"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "pass",
+   "corr:require-limits": "pass",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "kyverno/kyverno",
+   "kind": "Job",
+   "name": "tcc-kyverno-scale-to-zero",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": true,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "ghcr.io/kyverno/readiness-checker:v1.19.2"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "pass",
+   "corr:require-limits": "pass",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "cloudnative-pg/cloudnative-pg",
+   "kind": "Deployment",
+   "name": "tcc-cloudnative-pg",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": true,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "ghcr.io/cloudnative-pg/cloudnative-pg:1.30.1"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "gitea/gitea",
+   "kind": "Deployment",
+   "name": "tcc-postgresql-ha-pgpool",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": true,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "docker.io/bitnamilegacy/pgpool:4.6.3-debian-12-r0"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "pass",
+   "corr:require-limits": "pass",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "gitea/gitea",
+   "kind": "Deployment",
+   "name": "tcc-gitea",
+   "features": {
+    "init_count": 3,
+    "init_privileged": false,
+    "init_no_limits": true,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "docker.gitea.com/gitea:1.27.0-rootless",
+     "docker.gitea.com/gitea:1.27.0-rootless",
+     "docker.gitea.com/gitea:1.27.0-rootless",
+     "docker.gitea.com/gitea:1.27.0-rootless"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "fail",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "gitea/gitea",
+   "kind": "StatefulSet",
+   "name": "tcc-postgresql-ha-postgresql",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": true,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "docker.io/bitnamilegacy/postgresql-repmgr:17.6.0-debian-12-r2"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "pass",
+   "corr:require-limits": "pass",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "gitea/gitea",
+   "kind": "StatefulSet",
+   "name": "tcc-valkey-cluster",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": true,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "docker.io/bitnamilegacy/valkey-cluster:8.1.3-debian-12-r3"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "pass",
+   "corr:require-limits": "pass",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "gitea/gitea",
+   "kind": "Pod",
+   "name": "tcc-gitea-test-connection",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "busybox:latest"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "fail",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "fail",
+   "corr:restrict-latest-tag": "fail"
+  },
+  {
+   "chart": "fluent/fluent-bit",
+   "kind": "DaemonSet",
+   "name": "tcc-fluent-bit",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "cr.fluentbit.io/fluent/fluent-bit:5.1.3"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "fail",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "fluent/fluent-bit",
+   "kind": "Pod",
+   "name": "tcc-fluent-bit-test-connection",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "busybox:latest"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "fail",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "fail",
+   "corr:restrict-latest-tag": "fail"
+  },
+  {
+   "chart": "datadog/datadog",
+   "kind": "Deployment",
+   "name": "tcc-operator",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "registry.datadoghq.com/operator:1.31.2"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "fail",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "datadog/datadog",
+   "kind": "Deployment",
+   "name": "tcc-datadog-cluster-agent",
+   "features": {
+    "init_count": 1,
+    "init_privileged": false,
+    "init_no_limits": true,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "registry.datadoghq.com/cluster-agent:7.84.6",
+     "registry.datadoghq.com/cluster-agent:7.84.6"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "fail",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "oauth2-proxy/oauth2-proxy",
+   "kind": "Deployment",
+   "name": "tcc-oauth2-proxy",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": true,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "quay.io/oauth2-proxy/oauth2-proxy:v7.15.5"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "runix/pgadmin4",
+   "kind": "Deployment",
+   "name": "tcc-pgadmin4",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "docker.io/dpage/pgadmin4:9.18"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "fail",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "runix/pgadmin4",
+   "kind": "Pod",
+   "name": "tcc-pgadmin4-test-connection",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": true,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "docker.io/busybox:1.38.0"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "pass",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "bitnami/nginx",
+   "kind": "Deployment",
+   "name": "tcc-nginx",
+   "features": {
+    "init_count": 1,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": true,
+    "pod_nonroot": false,
+    "all_containers_nonroot": true,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "registry-1.docker.io/bitnami/nginx:latest",
+     "registry-1.docker.io/bitnami/nginx:latest"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "pass",
+   "corr:require-limits": "pass",
+   "orig:restrict-latest-tag": "fail",
+   "corr:restrict-latest-tag": "fail"
+  },
+  {
+   "chart": "bitnami/wordpress",
+   "kind": "Deployment",
+   "name": "tcc-wordpress",
+   "features": {
+    "init_count": 1,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": true,
+    "pod_nonroot": false,
+    "all_containers_nonroot": true,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "registry-1.docker.io/bitnami/wordpress:latest",
+     "registry-1.docker.io/bitnami/wordpress:latest"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "pass",
+   "corr:require-limits": "pass",
+   "orig:restrict-latest-tag": "fail",
+   "corr:restrict-latest-tag": "fail"
+  },
+  {
+   "chart": "bitnami/wordpress",
+   "kind": "StatefulSet",
+   "name": "tcc-mariadb",
+   "features": {
+    "init_count": 1,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": true,
+    "pod_nonroot": false,
+    "all_containers_nonroot": true,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "registry-1.docker.io/bitnami/mariadb:latest",
+     "registry-1.docker.io/bitnami/mariadb:latest"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "pass",
+   "corr:require-limits": "pass",
+   "orig:restrict-latest-tag": "fail",
+   "corr:restrict-latest-tag": "fail"
+  },
+  {
+   "chart": "bitnami/thanos",
+   "kind": "Deployment",
+   "name": "tcc-thanos-query-frontend",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": true,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "docker.io/bitnami/thanos:0.39.2-debian-12-r2"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "pass",
+   "corr:require-limits": "pass",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "bitnami/thanos",
+   "kind": "Deployment",
+   "name": "tcc-thanos-query",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": true,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "docker.io/bitnami/thanos:0.39.2-debian-12-r2"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "pass",
+   "corr:require-limits": "pass",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "goauthentik/authentik",
+   "kind": "Deployment",
+   "name": "tcc-authentik-server",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "ghcr.io/goauthentik/server:2026.8.5"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "fail",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "goauthentik/authentik",
+   "kind": "Deployment",
+   "name": "tcc-authentik-worker",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "ghcr.io/goauthentik/server:2026.8.5"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "fail",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "nginx/nginx-ingress",
+   "kind": "Deployment",
+   "name": "tcc-nginx-ingress-controller",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": true,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "nginx/nginx-ingress:5.7.0"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "kedacore/keda",
+   "kind": "Deployment",
+   "name": "keda-operator",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": true,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "ghcr.io/kedacore/keda:2.21.0"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "pass",
+   "corr:require-limits": "pass",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "kedacore/keda",
+   "kind": "Deployment",
+   "name": "keda-operator-metrics-apiserver",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": true,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "ghcr.io/kedacore/keda-metrics-apiserver:2.21.0"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "pass",
+   "corr:require-limits": "pass",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "kedacore/keda",
+   "kind": "Deployment",
+   "name": "keda-admission-webhooks",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": true,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "ghcr.io/kedacore/keda-admission-webhooks:2.21.0"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "pass",
+   "corr:require-limits": "pass",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "nfs-subdir-external-provisioner/nfs-subdir-external-provisioner",
+   "kind": "Deployment",
+   "name": "tcc-nfs-subdir-external-provisioner",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "registry.k8s.io/sig-storage/nfs-subdir-external-provisioner:v4.0.2"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "fail",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "artifact-hub/artifact-hub",
+   "kind": "Deployment",
+   "name": "hub",
+   "features": {
+    "init_count": 2,
+    "init_privileged": false,
+    "init_no_limits": true,
+    "image_no_tag": false,
+    "init_latest": true,
+    "pod_nonroot": false,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "artifacthub/hub:v1.23.0",
+     "registry-1.docker.io/artifacthub/postgres:latest",
+     "bitnamilegacy/kubectl:1.35"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "fail",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "fail"
+  },
+  {
+   "chart": "artifact-hub/artifact-hub",
+   "kind": "Deployment",
+   "name": "trivy",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "aquasec/trivy:0.69.3"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "fail",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "artifact-hub/artifact-hub",
+   "kind": "StatefulSet",
+   "name": "tcc-postgresql",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": true,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "registry-1.docker.io/artifacthub/postgres:latest"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "pass",
+   "corr:require-limits": "pass",
+   "orig:restrict-latest-tag": "fail",
+   "corr:restrict-latest-tag": "fail"
+  },
+  {
+   "chart": "artifact-hub/artifact-hub",
+   "kind": "Job",
+   "name": "db-migrator-install",
+   "features": {
+    "init_count": 1,
+    "init_privileged": false,
+    "init_no_limits": true,
+    "image_no_tag": false,
+    "init_latest": true,
+    "pod_nonroot": false,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "artifacthub/db-migrator:v1.23.0",
+     "registry-1.docker.io/artifacthub/postgres:latest"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "fail",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "fail"
+  },
+  {
+   "chart": "artifact-hub/artifact-hub",
+   "kind": "CronJob",
+   "name": "scanner",
+   "features": {
+    "init_count": 1,
+    "init_privileged": false,
+    "init_no_limits": true,
+    "image_no_tag": false,
+    "init_latest": true,
+    "pod_nonroot": false,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "artifacthub/scanner:v1.23.0",
+     "registry-1.docker.io/artifacthub/postgres:latest"
+    ]
+   },
+   "orig:restrict-privileged": "n/a",
+   "corr:restrict-privileged": "n/a",
+   "orig:require-nonroot": "n/a",
+   "corr:require-nonroot": "n/a",
+   "orig:require-limits": "n/a",
+   "corr:require-limits": "n/a",
+   "orig:restrict-latest-tag": "n/a",
+   "corr:restrict-latest-tag": "n/a"
+  },
+  {
+   "chart": "artifact-hub/artifact-hub",
+   "kind": "CronJob",
+   "name": "tracker",
+   "features": {
+    "init_count": 1,
+    "init_privileged": false,
+    "init_no_limits": true,
+    "image_no_tag": false,
+    "init_latest": true,
+    "pod_nonroot": false,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "artifacthub/tracker:v1.23.0",
+     "registry-1.docker.io/artifacthub/postgres:latest"
+    ]
+   },
+   "orig:restrict-privileged": "n/a",
+   "corr:restrict-privileged": "n/a",
+   "orig:require-nonroot": "n/a",
+   "corr:require-nonroot": "n/a",
+   "orig:require-limits": "n/a",
+   "corr:require-limits": "n/a",
+   "orig:restrict-latest-tag": "n/a",
+   "corr:restrict-latest-tag": "n/a"
+  },
+  {
+   "chart": "mojo2600/pihole",
+   "kind": "Deployment",
+   "name": "tcc-pihole",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "pihole/pihole:2026.07.2"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "fail",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "mojo2600/pihole",
+   "kind": "Pod",
+   "name": "tcc-smoke-test",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": true,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "curlimages/curl"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "fail",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "fail"
+  },
+  {
+   "chart": "prometheus-community/kube-state-metrics",
+   "kind": "Deployment",
+   "name": "tcc-kube-state-metrics",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": true,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "registry.k8s.io/kube-state-metrics/kube-state-metrics:v2.20.0"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "pass",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "hashicorp/consul",
+   "kind": "Deployment",
+   "name": "tcc-consul-connect-injector",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": true,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "hashicorp/consul-k8s-control-plane:2.1.0"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "pass",
+   "corr:require-limits": "pass",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "hashicorp/consul",
+   "kind": "Deployment",
+   "name": "tcc-consul-webhook-cert-manager",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": true,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "hashicorp/consul-k8s-control-plane:2.1.0"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "pass",
+   "corr:require-limits": "pass",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "hashicorp/consul",
+   "kind": "StatefulSet",
+   "name": "tcc-consul-server",
+   "features": {
+    "init_count": 1,
+    "init_privileged": false,
+    "init_no_limits": true,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": true,
+    "all_containers_nonroot": true,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "hashicorp/consul:2.1.0",
+     "hashicorp/consul-k8s-control-plane:2.1.0"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "pass",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "pass",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "hashicorp/consul",
+   "kind": "Pod",
+   "name": "tcc-consul-test",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "hashicorp/consul:2.1.0"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "fail",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "hashicorp/consul",
+   "kind": "Job",
+   "name": "tcc-consul-ai-cleanup",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": true,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "hashicorp/consul-k8s-control-plane:2.1.0"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "pass",
+   "corr:require-limits": "pass",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "hashicorp/consul",
+   "kind": "Job",
+   "name": "tcc-consul-feature-gate-set",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": true,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "hashicorp/consul-k8s-control-plane:2.1.0"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "pass",
+   "corr:require-limits": "pass",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "hashicorp/consul",
+   "kind": "Job",
+   "name": "tcc-consul-gateway-cleanup-custom",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": true,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "hashicorp/consul-k8s-control-plane:2.1.0"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "pass",
+   "corr:require-limits": "pass",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "hashicorp/consul",
+   "kind": "Job",
+   "name": "tcc-consul-gateway-cleanup",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": true,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "hashicorp/consul-k8s-control-plane:2.1.0"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "pass",
+   "corr:require-limits": "pass",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "hashicorp/consul",
+   "kind": "Job",
+   "name": "tcc-consul-gateway-resources",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": true,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "hashicorp/consul-k8s-control-plane:2.1.0"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "pass",
+   "corr:require-limits": "pass",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "community-charts/n8n",
+   "kind": "Deployment",
+   "name": "tcc-n8n",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": true,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "n8nio/n8n:2.41.6"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "pass",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  },
+  {
+   "chart": "grafana/alloy",
+   "kind": "DaemonSet",
+   "name": "tcc-alloy",
+   "features": {
+    "init_count": 0,
+    "init_privileged": false,
+    "init_no_limits": false,
+    "image_no_tag": false,
+    "init_latest": false,
+    "pod_nonroot": false,
+    "all_containers_nonroot": false,
+    "container_overrides_root": false,
+    "uid0": false,
+    "images": [
+     "docker.io/grafana/alloy:v1.21.2",
+     "quay.io/prometheus-operator/prometheus-config-reloader:v0.94.2@sha256:a1897c67478bc23434534e91ad3855280771196b1daf17144db9dbcb655bef71"
+    ]
+   },
+   "orig:restrict-privileged": "pass",
+   "corr:restrict-privileged": "pass",
+   "orig:require-nonroot": "fail",
+   "corr:require-nonroot": "fail",
+   "orig:require-limits": "fail",
+   "corr:require-limits": "fail",
+   "orig:restrict-latest-tag": "pass",
+   "corr:restrict-latest-tag": "pass"
+  }
+ ]
+}
