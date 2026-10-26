@@ -165,8 +165,8 @@ gcloud container clusters delete tcc-kyverno --zone us-central1-a --quiet
 ### Manifestos públicos (Seção 4.4)
 
 As políticas originais e corrigidas foram aplicadas aos 60 charts do Helm com mais estrelas no
-[Artifact Hub](https://artifacthub.io), consultado em 26/10/2026 (lista em
-`experimentos/manifestos-publicos/artifacthub-top60-2026-10-26.json`). Cada chart foi renderizado com
+[Artifact Hub](https://artifacthub.io) (lista em
+`experimentos/manifestos-publicos/artifacthub-top60.json`). Cada chart foi renderizado com
 `helm template` (valores padrão, Kubernetes 1.35.8), e os campos nulos foram removidos antes da avaliação,
 como faz a API do Kubernetes. Ficaram 148 workloads de 51 charts.
 
@@ -182,7 +182,7 @@ Para reproduzir (Helm 3.21, Kyverno CLI 1.18.1 e PyYAML):
 
 ```bash
 python3 experimentos/manifestos-publicos/renderizar.py \
-  experimentos/manifestos-publicos/artifacthub-top60-2026-10-26.json /tmp/charts helm
+  experimentos/manifestos-publicos/artifacthub-top60.json /tmp/charts helm
 python3 experimentos/manifestos-publicos/analisar.py /tmp/charts . kyverno /tmp/resultados.json
 ```
 
