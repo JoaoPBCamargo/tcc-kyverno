@@ -14,6 +14,7 @@ tests/               manifestos de teste: T0–T4 (isolados), B1–B3 (brechas),
 kyverno-test.yaml    resultados esperados das políticas corrigidas
 original/            políticas e testes exatamente como impressos na monografia (Códigos 1 a 8)
 figuras/             Figuras 1, 2 e 3 da monografia (PNG) e o script que as gera
+experimentos/        scripts e resultados das Seções 4.4 (manifestos públicos) e 4.5 (comparação com o PSA)
 .github/workflows/   CI: roda `kyverno test` com o Kyverno CLI 1.11.5, 1.18.1 e 1.19.2
 ```
 
@@ -157,6 +158,64 @@ cluster para não gerar custo:
 
 ```bash
 gcloud container clusters delete tcc-kyverno --zone us-central1-a --quiet
+```
+
+## Experimentos complementares
+
+### Manifestos públicos (Seção 4.4)
+
+As políticas originais e corrigidas foram aplicadas aos 60 charts do Helm com mais estrelas no
+[Artifact Hub](https://artifacthub.io), consultado em 26/10/2026 (lista em
+`experimentos/manifestos-publicos/artifacthub-top60-2026-10-26.json`). Cada chart foi renderizado com
+`helm template` (valores padrão, Kubernetes 1.35.8), e os campos nulos foram removidos antes da avaliação,
+como faz a API do Kubernetes. Ficaram 148 workloads de 51 charts.
+
+| Política | Originais | Corrigidas | Diferença |
+|---|---|---|---|
+| `restrict-privileged` | 2 (1 chart) | 4 (3 charts) | +2: initContainers privilegiados |
+| `require-nonroot` | 127 (47 charts) | 49 (20 charts) | −78: falsos positivos da versão original |
+| `require-limits` | 106 (38 charts) | 108 (38 charts) | +2: initContainers sem limites |
+| `restrict-latest-tag` | 15 (9 charts) | 18 (10 charts) | +3: `latest` em initContainers e imagem sem tag |
+| Conformes às quatro | 1 (0,7%) | 27 (18,2%) | +26 |
+
+Para reproduzir (Helm 3.21, Kyverno CLI 1.18.1 e PyYAML):
+
+```bash
+python3 experimentos/manifestos-publicos/renderizar.py \
+  experimentos/manifestos-publicos/artifacthub-top60-2026-10-26.json /tmp/charts helm
+python3 experimentos/manifestos-publicos/analisar.py /tmp/charts . kyverno /tmp/resultados.json
+```
+
+Os charts mudam com o tempo; o resultado desta execução está em `charts.json` (versões),
+`resultados.json` (um registro por workload) e `resumo.txt`.
+
+### Comparação com o Pod Security Admission (Seção 4.5)
+
+A matriz de testes e o `test-secure` foram submetidos a um cluster local (kind 0.33.0, Kubernetes 1.35.8,
+Kyverno 1.18.1 pelo chart 3.8.1) em quatro cenários: só o PSA `restricted`, só o Kyverno com as políticas
+originais, só com as corrigidas, e PSA + Kyverno.
+
+| Caso | PSA `restricted` | Kyverno (originais) | Kyverno (corrigidas) | PSA + Kyverno |
+|---|---|---|---|---|
+| T0 – Pod de referência | admitido | admitido | admitido | admitido |
+| T1 – privilegiado | barrado | barrado | barrado | barrado |
+| T2 – root | barrado | barrado | barrado | barrado |
+| T3 – tag `latest` | **admitido** | barrado | barrado | barrado |
+| T4 – sem limites | **admitido** | barrado | barrado | barrado |
+| B1 – root no contêiner | barrado | **admitido** | barrado | barrado |
+| B2 – imagem sem tag | barrado¹ | **admitido** | barrado | barrado¹ |
+| B3 – initContainer privilegiado | barrado | **admitido** | barrado | barrado |
+| D1 – Deployment privilegiado | **admitido²** | barrado | barrado | barrado |
+| `test-secure` (Código 8) | barrado³ | admitido | admitido | barrado³ |
+
+¹ Por outros campos exigidos pelo perfil (allowPrivilegeEscalation, capabilities, seccompProfile), não pela tag.
+² O Deployment é criado com um aviso; os Pods são recusados depois, pelo controlador.
+³ Por não declarar `seccompProfile`.
+
+Para reproduzir (Docker com ~2 GB de memória livre, kind, kubectl e Helm):
+
+```bash
+bash experimentos/psa/comparar-psa.sh
 ```
 
 ## Versões
